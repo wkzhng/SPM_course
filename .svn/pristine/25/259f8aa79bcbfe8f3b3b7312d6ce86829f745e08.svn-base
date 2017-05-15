@@ -1,0 +1,104 @@
+<% 
+//----------------------------------------------------------------
+ //Project: SPM System (Client SubSystem) 
+// JSP Name  : selectCourse4Student.jsp 
+// PURPOSE : 学生选课界面设计
+// HISTORY：
+//	Create：
+//	Modify：Han Xinyu   2015.11.2
+//  Copyright  : BUPTSSE   
+//----------------------------------------------------------------- %>
+
+<%@ page language="java" pageEncoding="UTF-8"%>
+<%@ taglib uri="/struts-tags" prefix="s"%>
+<html>
+	<head>
+		<link href="./css/fontStyle.css" rel="stylesheet" type="text/css" />
+		<link href="./css/blogStyle.css" rel="stylesheet" type="text/css" />
+		<link href="./css/tableStyle.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="article">
+			<div class="content">
+				<s:if test="#session.user.position==null">
+					<a href="./jsp/error.jsp" target="123">
+						<span class="headlink">
+							你又没有登陆人家凭什么让你看~~！BYEBYE
+						</span>
+					</a>
+				</s:if>
+				<s:else>
+					<h1>
+					选课
+					</h1>
+					<table border="1" cellspacing="1" cellpadding="8" width="700">
+						<tr align="center" bgcolor="silver">
+							<!-- 
+							<th>
+								<div align="center">编号</div>
+							</th>
+							-->
+							<th>
+								<div align="center">学号</div>
+							</th>
+									
+							<th>
+								<div align="center">姓名</div>
+							</th>
+							
+							<th>
+								<div align="center">班级</div>
+							</th>
+									
+							<th>
+								<div align="center">状态</div>
+							</th>
+							
+							<!--
+							<th>
+								<div align="center">备注</div>
+							</th>
+							-->
+						</tr>
+						<s:iterator value="#request.courseList" id="courses">
+							<tr>
+								<!--
+									<td height="75">
+										<s:property value="#courses.num" />
+									</td>
+								-->
+									<td height="75">
+										<s:property value="#courses.studentId" />
+									</td>
+									<td height="75">
+										<s:property value="#courses.name" />
+									</td>
+									<td height="75">
+										<s:property value="#courses.classId" />
+									</td>
+									<td height="75">
+										<s:if test="#session.user.position=='学生'">
+											<s:if test="#courses.status=='未选'">
+												<a href="no2Select.do?studentId=<s:property value="#courses.studentId"/>">
+													<s:property	value="#courses.status" /> 
+												</a>
+											</s:if>
+												
+											<s:elseif test="#courses.status=='待确认'">
+													<s:property	value="#courses.status" /> 
+											</s:elseif>
+											<s:else>
+													<s:property	value="#courses.status" /> 
+											</s:else>
+										</s:if>
+								</tr>
+						</s:iterator>
+					
+					</table>
+				
+				</s:else>
+			</div>
+		
+		</div>
+	</body>
+</html>

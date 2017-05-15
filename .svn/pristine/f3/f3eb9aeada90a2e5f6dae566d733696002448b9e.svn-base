@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<!-- 指定Web应用的默认编码，相当于调用request的setCharacterEncoding方法 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!-- 设置浏览器是否缓存静态内容，默认值为true(生产环境下使用)，开发阶段最好关闭 -->
+	<constant name="struts.serve.static.browserCache" value="false" />
+	<!-- 当Struts2的配置文件修改后，系统是否自动重新加载配置文件，默认值为false(生产环境下使用)，开发阶段最好打开 -->
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<!-- 开发模式下使用，这样可以打印出更详细的日志信息 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 默认的视图主题 -->
+	<constant name="struts.ui.theme" value="simple" />
+	<!-- 把Action对象交给Spring创建和管理 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- Struts2处理的请求后缀,默认值是action -->
+	<constant name="struts.action.extension" value="do" />
+	
+	<!-- 国际化资源文件
+	<constant name="struts.custom.i18n.resources" value="globalMessages" />
+	 -->
+	<!-- <include file="classpath:struts/struts-login.xml"></include> -->
+	
+	<package name="hysd" extends="struts-default">
+	
+		<default-action-ref name="indexPage" />
+		
+		<global-results>
+			<result name="exceptionPage">/error/exceptionPage.jsp</result>
+		</global-results>
+		
+		<global-exception-mappings>
+			<exception-mapping result="exceptionPage" exception="java.lang.Exception" />
+		</global-exception-mappings>
+		
+		<action name="indexPage">
+			<result>jsp/register.jsp</result>
+		</action>
+		
+		<!-- 登入 -->
+		<action name="loginAction" method="login" class="LoginAction">
+			<result name="success">jsp/mainFrame.jsp</result>
+			<result name="error">jsp/register.jsp</result>
+		</action>
+		
+		<!-- 注册 -->
+		<action name="registerAction" method="register" class="RegisterAction">
+			<result name="success">jsp/register.jsp</result>
+			<result name="error">jsp/register.jsp</result>
+		</action>
+		
+		<!-- 学生进度 -->
+		<action name="courseSchedule4StudentAction" method="getAllVideoInfo" class="CourseSchedule4StudentAction">
+			<result name="success">jsp/video.jsp</result>
+			<result name="error">jsp/test.jsp</result>
+		</action>
+		
+		<!-- 学生选课列表 -->
+		<action name="selectCourse4Student" method="listCourse" class="SelectCourse4StudentAction">
+			<result name="success">jsp/selectCourse4Student.jsp</result>
+<!-- 			<result name="failure">/error.jsp</result> -->
+<!-- 			<result name="error">jsp/error.jsp</result> -->
+		</action>
+		
+		<!-- 老师选课列表 -->
+		<action name="selectCourse4Teacher" method="listCourse" class="SelcetCourse4TeacherAction">
+			<result name="success">jsp/selectCourse4Teacher.jsp</result>
+<!-- 			<result name="failure">/failure.jsp</result> -->
+<!-- 			<result name="error">jsp/error.jsp</result> -->
+		</action>
+		
+		<!-- 选课状态改变动作 -->
+		<action name="no2Select" method="No2Select" class="SelectCourse4StudentAction">
+			<result name="success">jsp/selectCourse4Student.jsp</result>
+<!-- 			<result name="failure">/failure.jsp</result> -->
+<!-- 			<result name="error">jsp/error.jsp</result> -->
+		</action>
+		
+		<!-- 教师确认选课 -->
+		<action name="select2Check" method="Select2Check" class="SelcetCourse4TeacherAction">
+			<result name="success">jsp/selectCourse4Teacher.jsp</result>
+<!-- 			<result name="failure">/failure.jsp</result> -->
+<!-- 			<result name="error">jsp/error.jsp</result> -->
+		</action>
+		
+		<!-- 教学团队 -->
+		<action name="enterTeacherTeam" method="enterBasicInfo" class="BasicInfoAction" >
+			<result name="success">jsp/teacherTeam.jsp</result>
+		</action>
+		
+		<!-- 参考书目 -->
+		<action name="enterReferences" method="enterBasicInfo" class="BasicInfoAction">
+			<result name="success">jsp/references.jsp</result>
+		</action>
+		
+		<!-- 学术水品 -->
+		<action name="enterAcademicLevel" method="enterBasicInfo" class="BasicInfoAction">
+			<result name="success">jsp/academicLevel.jsp</result>
+		</action>
+		
+		<!-- 课时安排 -->
+		<action name="enterTeachingPlan" method="enterBasicInfo" class="BasicInfoAction">
+			<result name="success">jsp/teachingPlan.jsp</result>
+		</action>
+		
+		<!-- 联系我们 -->
+		<action name="enterContact" method="enterBasicInfo" class="BasicInfoAction">
+			<result name="success">jsp/contact.jsp</result>
+		</action>
+		
+		<!-- 课程特色 -->
+		<action name="enterCharacter" method="enterBasicInfo" class="BasicInfoAction">
+			<result name="success">jsp/character.jsp</result>
+		</action>
+		
+		<!-- 教学大纲 -->
+		<action name="enterOutline" method="enterBasicInfo" class="BasicInfoAction">
+			<result name="success">jsp/outline.jsp</result>
+		</action>
+		
+		<!-- 知识点索引 -->
+		<action name="enterPractice" method="enterBasicInfo" class="BasicInfoAction">
+			<result name="success">jsp/practice.jsp</result>
+		</action>
+	</package>
+</struts>

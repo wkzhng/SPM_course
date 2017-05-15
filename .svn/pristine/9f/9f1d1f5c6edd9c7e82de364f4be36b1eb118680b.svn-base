@@ -1,0 +1,657 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:o="urn:schemas-microsoft-com:office:office"
+	xmlns:w="urn:schemas-microsoft-com:office:word"
+	xmlns="http://www.w3.org/TR/REC-html40">
+
+	<head>
+		<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+		<meta name=ProgId content=Word.Document>
+		<meta name=Generator content="Microsoft Word 9">
+		<meta name=Originator content="Microsoft Word 9">
+		<link href="textStyle.css" rel="stylesheet" type="text/css" />
+		<link href="tableStyle.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="context">
+			<h1>
+				案例说明-《校务通管理系统》的项目集成计划
+			</h1>
+			<div class="headline">
+				案例说明-《校务通管理系统》的项目集成计划
+			</div>
+			<div class="title1">
+				1．导言
+			</div>
+			&nbsp;&nbsp;略
+			<div class="title1">
+				2．概述
+			</div>
+			&nbsp;&nbsp;《校务通管理系统》是对学校教务和教学活动进行综合管理的平台系统，是基于Internet环境的综合信息系统，满足学校管理层、教师、学生、家长等日常工作、学习、管理、咨询等工作。目的是共享学校各种资源、提高学校的工作效率、规范学校的工作流程、便利校内外的交流。系统具有标准化、分布式存储和检索、易用、易维护、开放等特点。
+			<div class="title1">
+				3 项目任务范围
+			</div>
+			&nbsp;&nbsp;《校务通管理系统》项目需完成的任务总的分为两类：通用功能和学校日常业务管理功能。其中通用功能包括电子课表、会议通知和公告、日程安排、个人日记、通讯录、教师答疑、家庭作业等。学校日常业务管理功能包括招生管理、学生日常管理、教务管理、、教师备课系统、资源库系统、网上考试功能、聊天室、论坛等。图1是项目任务的范围图示。
+			<center>
+				<![if !vml]>
+				<img src="./Integration.files/image002.jpg" v:shapes="_x0000_i1025">
+				<![endif]>
+				<br />
+				(图1 任务范围)
+			</center>
+			<div class="title1">
+				4 项目目标
+			</div>
+			&nbsp;&nbsp;目前电化教育已经越来越普及，各地的学校纷纷建设自己的校园网，但是好多学校在投巨资建设校园网之后，未能高效利用校园网的资源。《校务通管理系统》提供了有效利用校园网，实现学校管理的电子化。本项目的产品可以达到以下目标。
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;• 提高生产效率，减少返工。
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;• 节省开支。
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;• 业务过程的流水线化。
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;• 先前人工劳动的自动化。
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;• 符合相关标准和规则。
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;• 与目前的应用产品相比较，提高了可用性或减少了失效程度。
+			<br />
+			&nbsp;&nbsp;另外，通过项目进一步验证和完善公司的质量体系,同时锻炼开发队伍的协同精神。
+			<div class="title1">
+				5 项目实施策略
+			</div>
+			&nbsp;&nbsp;实施策略是确定如何实施项目，以达到项目目标的策略。根据校务通项目特点和企业的战略要求，采取如下策略：
+			<br />
+			&nbsp;&nbsp; 项目管理策略
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;1. 项目管理过程遵循公司质量体系中关于项目管理过程规范
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;2. 根据项目计划中的评审点进行跟踪和管理，并根据结果对项目计划进行适当的调整
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;3. 评审采用定期评审、阶段评审和事件评审相结合的方式
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;4. 按周发布项目简报，通报项目进展情况及其他相关情况
+			<br />
+			 &nbsp;&nbsp;软件开发策略
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;1. 采用OO技术逐步构造系统
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;2. 产品按阶段提交
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;3. 开发实施过程采用公司的复用技术，同时遵循公司质量体系中关于项目实施过程规范
+			<br />
+			 &nbsp;&nbsp;质量保证策略
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;1. 质量管理过程遵循公司质量体系中关于项目质量管理过程规范。
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;2. 加强对项目参与人员的质量保证概念的培训
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;3. 加强对过程的控制，重点确定该项目中需控制的过程
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;4. 加强对产品规范的审计，重点确定该项目中需审计的产品
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;5. 实施完整的软件配置管理
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;6 项目组织结构
+			<br />
+			&nbsp;&nbsp;由于该项目在实施过程中需要涉及不同组织的各方面人员，而各组织之间的利益、任务和职责也不尽相同，因此明确定义项目组织结构和各自职责可保证项目的顺利进行。该项目的组织结构图如图2：
+			<center>
+				<br />
+				<![if !vml]>
+				<span
+					style='mso-ignore: vglayout; position: relative; z-index: 1; left: 16px; top: -8px; width: 579px; height: 384px'><img
+						width=579 height=384 src="./Integration.files/image003.gif"
+						v:shapes="_x0000_s1027 _x0000_s1028 _x0000_s1029 _x0000_s1030 _x0000_s1031 _x0000_s1032 _x0000_s1033 _x0000_s1034 _x0000_s1035 _x0000_s1036 _x0000_s1037 _x0000_s1038 _x0000_s1039 _x0000_s1040 _x0000_s1041 _x0000_s1042 _x0000_s1043 _x0000_s1044 _x0000_s1045 _x0000_s1046 _x0000_s1047 _x0000_s1048 _x0000_s1049 _x0000_s1050 _x0000_s1051 _x0000_s1052">
+				</span>
+				<![endif]>
+			</center>
+			<br />
+			&nbsp;&nbsp;其中：
+			<br />
+			&nbsp;&nbsp;市场部
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责与用户的协调工作
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责项目相关的商务活动
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责用户需求的接口
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 配合项目经理的资源协调活动
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责产品的验收活动
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责系统的维护活动
+			<br />
+			&nbsp;&nbsp;项目管理
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责项目的组织和规划
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责项目计划制定和维护
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责项目的跟踪和管理
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责资源的分配和协调活动
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责各组织和计划之间的协调活动
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责与市场部的协调活动
+			<br />
+			&nbsp;&nbsp;软件开发
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责项目的软件开发，包括设计，编码，单元测试和集成测试
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责产品质量控制的工作
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责配合质量保证的活动，如系统测试，文档编制等
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 配合产品验收的相关活动
+			<br />
+			&nbsp;&nbsp;质量保证
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责项目过程和产品规范的制定
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责项目过程的质量保证活动，
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 过程评审
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 产品审计
+			<br />
+			&nbsp;&nbsp;配置管理
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责项目的配置管理活动
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责软件产品的提交
+			<br />
+			&nbsp;&nbsp;用户
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 确保相关责任的实施
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 参与项目的组织和规划
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 负责产品的验收工作
+			<br />
+			&nbsp;&nbsp;表1为角色映射表。
+			<br />
+			&nbsp;&nbsp;表1：角色映射表
+			<center>
+				<table>
+					<tr>
+						<td></td>
+						<td>
+							项目管理组
+						</td>
+						<td>
+							软件开发组
+						</td>
+						<td>
+							质量保证组
+						</td>
+						<td>
+							配置管理组
+						</td>
+					</tr>
+					<tr>
+						<td>
+							负责人
+						</td>
+						<td>
+							韩万江
+						</td>
+						<td>
+							楼岳尊
+						</td>
+						<td>
+							郭天奇
+						</td>
+						<td>
+							岳好
+						</td>
+					</tr>
+					<tr>
+						<td>
+							组成（1）
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							1
+						</td>
+					</tr>
+				</table>
+			</center>
+			<div class="title1">
+				7 项目生存期
+			</div>
+			&nbsp;&nbsp;根据该项目的特点并结合公司已有的软件生存期模型定义，本项目生存期采用增量模型如图3。
+			<center>
+				<br />
+				<img width="527" height="489" src="./Integration.files/image010.gif"
+					v:shapes="_x0000_s1053 _x0000_s1054 _x0000_s1055 _x0000_s1056 _x0000_s1057 _x0000_s1058 _x0000_s1059 _x0000_s1060 _x0000_s1061 _x0000_s1062 _x0000_s1069 _x0000_s1070 _x0000_s1071 _x0000_s1072 _x0000_s1073 _x0000_s1074 _x0000_s1075">
+			</center>
+			<br />
+			&nbsp;&nbsp;生存期中的各阶段定义如下：
+			<br />
+			&nbsp;&nbsp;项目规划阶段
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;阶段目标： 根据合同和初步的需求分析确定项目的规模、时间计划和资源需求。
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输入： 合同文本,SOW
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;过程： 项目规划，计划确认
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输出： 项目计划
+			<br />
+			&nbsp;&nbsp;需求分析阶段
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;阶段目标：确定客户的需求
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输入： 项目计划，SOW
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;过程： 需求获取，需求分析，需求控制
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输出： 原型系统，需求规格
+			<br />
+			&nbsp;&nbsp;设计阶段
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;阶段目标： 总体系统结构设计
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输入： 原型系统，需求规格
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;过程： 总体设计
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输出： 系统设计说明书，数据库结构定义
+			<br />
+			&nbsp;&nbsp;增量1实现
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp; 阶段目标： 实现系统的通用功能
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp; 输入： 系统设计说明书,数据库结构定义
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp; 过程： 详细设计,编码，代码走查，代码评审，单元测试
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp; 输出： 详细设计说明书，源代码，可运行版本－1
+			<br />
+			&nbsp;&nbsp;增量2实现
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;阶段目标： 实现系统的招生管理功能
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输入： 系统设计说明书,数据库结构定义
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;过程： 详细设计,编码，代码走查，代码评审，单元测试
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输出： 详细设计说明书，源代码，可运行版本－2
+			<br />
+			&nbsp;&nbsp;增量3实现
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;阶段目标： 实现系统的学生日常管理功能
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输入： 系统设计说明书,数据库结构定义
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;过程： 详细设计,编码，代码走查，代码评审，单元测试
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输出： 详细设计说明书，源代码，可运行版本－3
+			<br />
+			&nbsp;&nbsp;增量4实现
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;阶段目标： 实现系统的教务管理功能
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输入： 系统设计说明书,数据库结构定义
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;过程： 详细设计,编码，代码走查，代码评审，单元测试
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输出： 详细设计说明书，源代码，可运行版本－4
+			<br />
+			&nbsp;&nbsp;增量5实现
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;阶段目标： 实现系统的教师辅助功能
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输入： 系统设计说明书,数据库结构定义
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;过程： 详细设计,编码，代码走查，代码评审，单元测试
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输出： 详细设计说明书，源代码，可运行版本－5
+			<br />
+			&nbsp;&nbsp;增量6实现
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;阶段目标： 实现系统的聊天室/论坛功能
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输入： 系统设计说明书,数据库结构定义
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;过程： 详细设计,编码，代码走查，代码评审，单元测试
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输出： 详细设计说明书，源代码，可运行版本－6
+			<br />
+			&nbsp;&nbsp;集成测试
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;阶段目标： 通过集成环境下的软件测试
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输入： 测试计划
+			<br />
+			&nbsp;&nbsp;测试案例
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;过程： 集成测试，系统测试
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输出： 系统软件包,测试报告，产品说明书
+			<br />
+			&nbsp;&nbsp;产品提交
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;阶段目标： 产品可投入使用
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输入： 系统软件包
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;过程： 产品提交
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;输出： 验收报告
+			<div class="title1">
+				8 时间计划
+			</div>
+			&nbsp;&nbsp;项目进度计划甘特图如图4所示(,详见进度计划.mpp,)：
+			<center>
+				<br />
+				<img width="445" height="151" src="./Integration.files/image012.jpg"
+					v:shapes="_x0000_i1026">
+				<br />
+				（图4 进度计划）
+			</center>
+
+			<div class="title1">
+				9 项目成本估算
+			</div>
+			&nbsp;&nbsp;项目估算是为了确定项目所需的人力、时间以及项目完成过程中耗费的人力、物力、财力资源。图5是项目估算和预算的结果(详见估算计划.).
+			<center>
+				<br />
+				<img width="553" height="332" src="./Integration.files/image014.gif"
+					v:shapes="_x0000_i1027">
+
+				<br />
+				（图5 成本计划）
+			</center>
+			<div class="title1">
+				10质量管理计划
+			</div>
+			&nbsp;&nbsp;质量管理计划详见质量管理计划专题.
+			<div class="title1">
+				11 配置管理计划
+			</div>
+			&nbsp;&nbsp;配置管理计划详见配置管理计划专题.
+			<div class="title1">
+				12 项目风险计划
+			</div>
+			&nbsp;&nbsp;风险是指在项目进行过程中可能发生的事件，这些事件将会对项目按预期时间、资源和预算完成产生重大影响。风险分析的目标是识别这些事件，设法避免这些事件的发生并制定一旦这些事件发生后的处理措施。表2是本项目风险计划清单表。
+			<br />
+			&nbsp;&nbsp;表2：风险分析表
+			<center>
+				<table>
+					<tr>
+						<td>
+							排序
+						</td>
+						<td>
+							输入
+						</td>
+						<td>
+							风险事件
+						</td>
+						<td>
+							可能性
+						</td>
+						<td>
+							影响
+						</td>
+						<td>
+							风险值
+						</td>
+						<td>
+							风险应对措施
+						</td>
+					</tr>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							客户的SOW
+						</td>
+						<td>
+							需求不明确，增加需求，
+							<br />
+							导致需求蔓延
+						</td>
+						<td>
+							70%
+						</td>
+						<td>
+							50%
+						</td>
+						<td>
+							35%
+						</td>
+						<td>
+							1.采取加班的方法
+							<br />
+							2.修改计划去掉一写任务
+							<br />
+							3.与客户商量延迟一些时间
+						</td>
+					</tr>
+					<tr>
+						<td>
+							2
+						</td>
+						<td>
+							合同
+						</td>
+						<td>
+							进度要求紧，合同金额有限
+						</td>
+						<td>
+							30%
+						</td>
+						<td>
+							50%
+						</td>
+						<td>
+							15%
+						</td>
+						<td>
+							可以请一些实习的学生做辅助工作,
+							<br />
+							一来成本不高,二来可以加快进度.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							4
+						</td>
+						<td>
+							WBS
+						</td>
+						<td>
+							供货商、外包商的质量问题
+						</td>
+						<td>
+							20%
+						</td>
+						<td>
+							50%
+						</td>
+						<td>
+							10%
+						</td>
+						<td>
+							多选择几个可以作为
+							<br />
+							备份的外包商和供应商
+						</td>
+					</tr>
+					<tr>
+						<td>
+							5
+						</td>
+						<td>
+							历史项目信息
+						</td>
+						<td>
+							开发人员的流动
+						</td>
+						<td>
+							15%
+						</td>
+						<td>
+							60%
+						</td>
+						<td>
+							9%
+						</td>
+						<td>
+							1．注意项目团队的沟通，
+							<br />
+							及时了解开发人员的动态
+							<br />
+							2．控制好项目过程中的文档
+							<br />
+							3.从其他的项目组借调人员
+							<br />
+							4．从外部招聘有过此类开发经验人员
+						</td>
+					</tr>
+				</table>
+			</center>
+			<div class="title1">
+				13.度量计划
+			</div>
+			&nbsp;&nbsp;详见度量计划专题
+			<div class="title1">
+				14 项目沟通与评审
+			</div>
+			&nbsp;&nbsp;项目评审的主要目的是根据项目计划对项目的执行活动进行检查，及时发现问题，研究解决对策，纠正偏差，保证项目的顺利实施。项目交流计划分为如下几类：
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 每天17:00的沟通交流
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 定期评审
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 阶段评审
+			<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;- 事件评审
+			<br />
+			&nbsp;&nbsp;各类交流评审安排见表3。
+			<br />
+			&nbsp;&nbsp;表3:项目管理交流计划
+			<center>
+				<table>
+					<tr>
+						<td>
+							评审类别
+						</td>
+						<td>
+							评审周期
+						</td>
+						<td>
+							评审要点
+						</td>
+						<td>
+							相关人员
+						</td>
+					</tr>
+					<tr>
+						<td>
+							日例会
+						</td>
+						<td>
+							每天17:00~17:30
+						</td>
+						<td>
+							1.不限定主题和内容,随意交流
+							<br />
+							2.共享经验,避免错误
+						</td>
+						<td>
+							项目组所有人
+						</td>
+					</tr>
+					<tr>
+						<td>
+							定期评审（周例会）
+						</td>
+						<td>
+							每周五
+						</td>
+						<td>
+							1.本周工作进度
+							<br />
+							2.问题及对策
+							<br />
+							3.资源协调
+							<br />
+							4.下周工作安排
+						</td>
+						<td>
+							项目经理
+							<br />
+							开发经理
+							<br />
+							质量经理
+							<br />
+							配置管理员
+						</td>
+					</tr>
+					<tr>
+						<td>
+							阶段评审
+						</td>
+						<td>
+							阶段结束
+						</td>
+						<td>
+							1.本阶段计划执行情况
+							<br />
+							2.质量评审结果
+							<br />
+							3.产品审计结果
+							<br />
+							4.下阶段计划修正
+						</td>
+						<td>
+							项目主管
+							<br />
+							项目经理
+							<br />
+							开发经理
+							<br />
+							质量经理
+							<br />
+							配置管理员
+							<br />
+							市场人员
+						</td>
+					</tr>
+					<tr>
+						<td>
+							事件评审
+						</td>
+						<td>
+							当时间可能影响计划的执行
+						</td>
+						<td>
+							1.事件性质和影响范围
+							<br />
+							2.事件处理方案的讨论
+							<br />
+							3.修改计划的评审时间
+						</td>
+						<td>
+							项目经理 开发经理 质量经理
+						</td>
+					</tr>
+				</table>
+			</center>
+			<br />
+		</div>
+		</doby>
+</html>

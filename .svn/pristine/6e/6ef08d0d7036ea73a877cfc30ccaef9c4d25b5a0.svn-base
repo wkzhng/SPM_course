@@ -1,0 +1,120 @@
+STYLE typetextcssBODY {
+	FONT-FAMILY: “宋体“; FONT-SIZE: 9pt
+}
+TABLE {
+	FONT-FAMILY: “宋体“; FONT-SIZE: 9pt
+}
+TD {
+	FONT-FAMILY: “宋体“; FONT-SIZE: 9pt
+}
+TR {
+	FONT-FAMILY: “宋体“; FONT-SIZE: 9pt
+}
+
+A.tea:link {
+	COLOR: blue; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+A:tea:visited {
+	COLOR: blue; FONT-SIZE: 9pt; TEXT-DECORATION: underline
+}
+A:tea:active {
+	COLOR: blue; FONT-SIZE: 9pt; TEXT-DECORATION: underline
+}
+A:tea:hover {
+	COLOR: #blue; FONT-SIZE: 9pt; TEXT-DECORATION: underline
+}
+
+A.hj:visited {
+	COLOR: white; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+A.hj:hover {
+	COLOR: white; FONT-SIZE: 9pt; TEXT-DECORATION: underline
+}
+A.hj:link {
+	COLOR: white; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+
+A.hj1:visited {
+	COLOR: #ffffff; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+A.hj1:hover {
+	COLOR: #ffffff; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+A.hj1:link {
+	COLOR: #ffffff; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+
+A.gnhil:link {
+	FONT-SIZE: 9pt; COLOR: #ff9933; TEXT-DECORATION: none
+}
+A.gnhil:visited {
+	FONT-SIZE: 9pt; COLOR: #ff9933; TEXT-DECORATION: none
+}
+A.gnhil:hover {
+	FONT-SIZE: 9pt; COLOR: #ff9933; TEXT-DECORATION: underline
+}
+A.gnbot:link {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: “黑体“; TEXT-DECORATION: none
+}
+A.gnbot:visited {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: “黑体“; TEXT-DECORATION: none
+}
+A.gnbot:hover {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: “黑体“; TEXT-DECORATION: underline
+}
+A.gtitle:link {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: “黑体“; TEXT-DECORATION: none
+}
+A.gtitle:visited {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: “黑体“; TEXT-DECORATION: none
+}
+A.gtitle:hover {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: “黑体“; TEXT-DECORATION: underline
+}
+
+A.gqueryhil:link {
+	FONT-SIZE: 9pt; COLOR: #dd0000; FONT-FAMILY: “黑体“; TEXT-DECORATION: none
+}
+A.gqueryhil:visited {
+	FONT-SIZE: 9pt; COLOR: #dd0000; FONT-FAMILY: “黑体“; TEXT-DECORATION: none
+}
+A.gqueryhil:hover {
+	FONT-SIZE: 9pt; COLOR: #dd0000; FONT-FAMILY: “黑体“; TEXT-DECORATION: underline
+}
+.big6 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 8px; PADDING-BOTTOM: 5px; COLOR: #000000; PADDING-TOP: 5px; HEIGHT: 10px; BACKGROUND-COLOR: #006699
+}
+.big6 A {
+	COLOR: #000000
+}
+.big6 .hilite {
+	COLOR: #006699
+}
+.big6 .secexp {
+	COLOR: #003366
+}
+.big6 .secexp A {
+	COLOR: #003366
+}
+.big6 .header {
+	PADDING-RIGHT: 2px; BORDER-TOP: #989acd 1px solid; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; COLOR: #ffffff; PADDING-TOP: 2px; BACKGROUND-COLOR: #eeeeff
+}
+.big6 .container {
+	PADDING-RIGHT: 5px; BACKGROUND-POSITION: left top; PADDING-LEFT: 8px; PADDING-BOTTOM: 5px; COLOR: #ffffff; PADDING-TOP: 5px; BACKGROUND-COLOR: #eeeeff 
+}
+.big6 .contenter {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; COLOR: #ffffff; PADDING-TOP: 2px; BACKGROUND-COLOR: #eeeeff 
+}
+
+A.left:link {
+	COLOR: #FF8000; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+A.left:visited {
+	COLOR: #FF8000; FONT-SIZE: 9pt; TEXT-DECORATION: underline
+}
+A.left:active {
+	COLOR: #FF8000; FONT-SIZE: 9pt; TEXT-DECORATION: underline
+}
+A.left:hover {
+	COLOR: #3366FF; FONT-SIZE: 9pt; TEXT-DECORATION: underline
+}

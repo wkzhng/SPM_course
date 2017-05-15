@@ -1,0 +1,15 @@
+package com.buptsse.spm.service;
+
+import com.buptsse.spm.domain.BasicInfo;
+
+/**
+ * 
+ * @author yifei xue
+ * @date 2015年11月6日 下午10:11:53
+ * @description 基本信息service接口定义
+ * @modify
+ * @modifyDate
+ */
+public interface IBasicInfoService {
+	public BasicInfo enterBasicinfo(String name);
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="hysd" extends="struts-default">
+	
+		<default-action-ref name="indexPage" />
+		
+		<global-results>
+			<result name="exceptionPage">/error/exceptionPage.jsp</result>
+		</global-results>
+		
+		<global-exception-mappings>
+			<exception-mapping result="exceptionPage" exception="java.lang.Exception" />
+		</global-exception-mappings>
+		
+		<action name="indexPage">
+			<result>/login.jsp</result>
+		</action>
+		<action name="longin" method="login" class="com.buptsse.spm.action.LoginAction">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/loginError.jsp</result>
+			<result name="failure">/loginError.jsp</result>
+		</action>
+		
+		<action name="register" method="register" class="com.buptsse.spm.action.RegisterAction">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/loginError.jsp</result>
+			<result name="error">/loginError.jsp</result>
+		</action>
+
+	</package>
+
+</struts>
+

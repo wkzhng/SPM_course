@@ -1,0 +1,40 @@
+package com.buptsse.spm.service.impl;
+
+import javax.annotation.Resource;
+import javax.transaction.Transactional;
+
+import org.springframework.stereotype.Service;
+
+import com.buptsse.spm.dao.IBasicInfoDao;
+import com.buptsse.spm.domain.BasicInfo;
+import com.buptsse.spm.service.IBasicInfoService;
+
+/**
+ * 
+ * @author yifei xue
+ * @date 2015年11月6日 下午10:17:41
+ * @description 对基本信息的操作与获取
+ * @modify
+ * @modifyDate
+ */
+@Transactional
+@Service
+public class BasicInfoServiceImpl implements IBasicInfoService{
+	@Resource
+	private IBasicInfoDao basicInfoDao;
+	
+	
+	@Override
+	public BasicInfo enterBasicinfo(String name) {
+		// TODO Auto-generated method stub
+		BasicInfo basicInfo = new BasicInfo();
+		basicInfo = basicInfoDao.findBasicinfo(name);
+		if(basicInfo != null){
+			System.out.println("教师团队不为空");
+			return basicInfo;
+		}
+		System.out.println("教师团队为空");
+		return null;
+	}
+
+}

@@ -1,0 +1,45 @@
+package com.buptsse.spm.action;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.buptsse.spm.domain.Sp_chapter_video;
+import com.buptsse.spm.domain.User;
+import com.buptsse.spm.service.ICourseSchedule4StudentService;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class CourseSchedule4StudentAction extends ActionSupport{
+	private static Logger LOG = LoggerFactory.getLogger(CourseSchedule4StudentAction.class);
+//	private List<User> user;
+	
+	@Resource
+	private ICourseSchedule4StudentService courseSchedule4StudentService;
+	
+	public String getAllVideoInfo(){
+		List<Sp_chapter_video> scv = new ArrayList<Sp_chapter_video>();
+		scv = courseSchedule4StudentService.getAllInfo();
+		HttpServletRequest request=ServletActionContext.getRequest();
+		request.setAttribute("scv", scv);
+		if(scv == null){
+			System.out.println("ERROR in courseScheduleStudent");
+			return ERROR;
+		}else{
+			System.out.println("SUCCESS in courseScheduleStudent");
+			return SUCCESS;
+		}
+	}
+	
+	public void setCourseSchedule4StudentService(ICourseSchedule4StudentService courseSchedule4StudentService){
+		this.courseSchedule4StudentService = courseSchedule4StudentService;
+	}
+	public ICourseSchedule4StudentService getCourseSchedule4StudentService(){
+		return courseSchedule4StudentService;
+	}
+}

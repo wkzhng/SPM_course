@@ -1,0 +1,117 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:o="urn:schemas-microsoft-com:office:office"
+	xmlns:w="urn:schemas-microsoft-com:office:word"
+	xmlns="http://www.w3.org/TR/REC-html40">
+
+	<head>
+		<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+		<meta name=ProgId content=Word.Document>
+		<meta name=Generator content="Microsoft Word 9">
+		<meta name=Originator content="Microsoft Word 9">
+		<link rel=File-List href="./ScmPlan.files/filelist.xml">
+		<link rel=Edit-Time-Data href="./ScmPlan.files/editdata.mso">
+		<link href="textStyle.css" rel="stylesheet" type="text/css" />
+		<link href="tableStyle.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<h1 style="font-family: ">
+			案例说明
+		</h1>
+		<div class="headline">
+			《校务通管理系统》团队组织和沟通计划
+		</div>
+		<div class="context">
+			<div class="title3">
+				一、项目的组织结构如下图，它是矩阵型组织结构的一个具体化。
+				<br>
+			</div>
+			<center>
+				<img width="579" height="385" src="./TeamComm.files/image001.gif">
+			</center>
+			<b>&nbsp;&nbsp;其中：</b>
+			<br>
+			&nbsp;&nbsp;●&nbsp;市场部
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责与用户的协调工作
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责项目相关的商务活动
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责用户需求的接口
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;配合项目经理的资源协调活动
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责产品的验收活动
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责系统的维护活动
+			<br>
+			&nbsp;&nbsp;●&nbsp;项目管理
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责项目的组织和规划
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责项目计划制定和维护
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责项目的跟踪和管理
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责资源的分配和协调活动
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责各组织和计划之间的协调活动
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责与市场部的协调活动
+			<br>
+			&nbsp;&nbsp;●&nbsp;软件开发
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责项目的软件开发，包括设计，编码，单元测试和集成测试
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责产品质量控制的工作
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责配合质量保证的活动，如系统测试，文档编制等
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;配合产品验收的相关活动
+			<br>
+			&nbsp;&nbsp;●&nbsp;质量保证
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责项目过程和产品规范的制定
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责项目过程的质量保证活动，
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;过程评审
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;产品审计
+			<br>
+			&nbsp;&nbsp;●&nbsp;配置管理
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责项目的配置管理活动
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责软件产品的提交
+			<br>
+			&nbsp;&nbsp;●&nbsp;用户
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;确保相关责任的实施
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;参与项目的组织和规划
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;负责产品的验收工作
+			<br>
+			<div class="title3">
+				二、项目的沟通计划
+			</div>
+			&nbsp;&nbsp;为了保证项目开发过程的顺利进行和信息的有效沟通，特要求如下的沟通计划:
+			<br>
+			&nbsp;&nbsp;（1）每天17:00—17:30项目组成员进行口头交流
+			<br>
+			&nbsp;&nbsp;（2）每周五的14：00前提交周报告，格式见模板
+			<br>
+			&nbsp;&nbsp;（3）每周五的15：00-17：00召开项目周例会，会后发布会议纪要给相关的项目人员，其中说明项目的进展和存在的问题
+			<br>
+			&nbsp;&nbsp;（4）及时提交问题报告，问题可以通过网络提交，项目经理会及时获取问题信息
+			<br>
+		</div>
+
+		<div class="content" style="margin-bottom: 50px">
+			<br />
+			<p align="right">
+				版权所有&nbsp;©&nbsp;北京邮电大学&nbsp;&nbsp;地址:北京市西土城路10号&nbsp;&nbsp;邮编:100876
+			</p>
+		</div>
+	</body>
+</html>

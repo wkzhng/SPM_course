@@ -1,0 +1,11 @@
+package com.buptsse.spm.dao;
+import java.util.List;
+
+import com.buptsse.spm.domain.User;
+public interface IUserDao {
+	public User findUser(User user);
+	public boolean insertUser(User user);
+	public List<User> searchUser(List<Object> choose);
+	public boolean deleteUser(String username);
+	public boolean addUser(User user);
+}

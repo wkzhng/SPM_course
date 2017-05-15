@@ -1,0 +1,839 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:o="urn:schemas-microsoft-com:office:office"
+	xmlns:w="urn:schemas-microsoft-com:office:word"
+	xmlns="http://www.w3.org/TR/REC-html40">
+
+	<head>
+		<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+		<meta name=ProgId content=Word.Document>
+		<meta name=Generator content="Microsoft Word 9">
+		<meta name=Originator content="Microsoft Word 9">
+		<link rel=File-List href="./ScmPlan.files/filelist.xml">
+		<link rel=Edit-Time-Data href="./ScmPlan.files/editdata.mso">
+		<link href="textStyle.css" rel="stylesheet" type="text/css" />
+		<link href="tableStyle.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<h1 style="font-family: ">
+			案例说明
+		</h1>
+		<div class="headline">
+			《校务通管理系统》项目总结
+		</div>
+		<div class="context">
+			<div class="title2">
+				一、项目总体信息，包括项目总时间、总成本、总人力，总规模等信息。
+			</div>
+			&nbsp;&nbsp;项目总时间：2003/4/10-2003/6/11，共计45天，比计划多3天。
+			<br>
+			&nbsp;&nbsp;项目总成本：￥85,528.00
+			<br>
+			&nbsp;&nbsp;项目总人力：5人
+			<br>
+			&nbsp;&nbsp;项目总规模：157.80人天
+			<br>
+			&nbsp;&nbsp;规模比例见下图：
+			<br>
+			<center>
+				<img width="431" height="227" src="./Summary.files/image002.jpg">
+			</center>
+			<div class="title2">
+				二、项目评审记录
+			</div>
+			&nbsp;&nbsp;总评审次数：23
+			<br>
+			&nbsp;&nbsp;其中：
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;项目计划评审：1
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;设计评审：2
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;质量评审：2
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;定期评审：8
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;阶段评审：8
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;事件评审：2
+			<br>
+			<div class="title2">
+				三、产品提交表
+			</div>
+			<center>
+				<table>
+					<tr>
+						<td>
+							<div align="center">
+								产品名称
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								版本
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								阶段
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								日期
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								提交人
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								任务单
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								1.0
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								项目规划
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/4/10
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								韩万江
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								项目计划
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								1.0
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								项目规划
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/4/11
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								韩万江
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								配置管理计划
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								1.0
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								项目规划
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/4/11
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								岳好
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								质量保证计划
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								1.0
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								项目规划
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/4/11
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								郭天奇
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								用户界面demo
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								1.0
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								需求开发
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/4/18
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								孙泉
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								需求规格说明书
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								1.0
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								需求开发
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/4/18
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								姜岳尊
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								设计说明书
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								1.0
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								设计
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/4/21
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								姜岳尊
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								设计说明书
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								1.1
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								设计
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/4/23
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								姜岳尊
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								通用功能－增量1
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								0.1
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								实施
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/4/25
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								姜岳尊
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								招生管理－增量2
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								0.1
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								实施
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/5/2
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								姜岳尊
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								项目计划
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2.0
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								实施
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/5/2
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								韩万江
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								学生日常管理－增量3
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								0.1
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								实施
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/5/7
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								姜岳尊
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								教务管理－增量4
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								0.1
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								实施
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/5/20
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								姜岳尊
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								教师辅助功能－增量5
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								0.1
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								实施
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/5/22
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								姜岳尊
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								聊天室/论坛－增量6
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								0.1
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								实施
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/6/2
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								姜岳尊
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								产品包
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								1.0
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								实施
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/6/6
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								姜岳尊
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								测试报告
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								1.0
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								测试
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/6/6
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								岳好
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								用户手册
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								1.0
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								测试
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/6/11
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								孙泉
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								验收报告
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								1.0
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								提交
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/6/11
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								姜岳尊
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="center">
+								项目总结
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								1.0
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								提交
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								2003/6/12
+							</div>
+						</td>
+						<td>
+							<div align="center">
+								韩万江
+							</div>
+						</td>
+					</tr>
+				</table>
+			</center>
+			<div class="title2">
+				四、实际与计划的差异分析
+			</div>
+			<center>
+				<table>
+					<tr>
+						<div align="center">
+							项目时间差异（天）
+						</div>
+					</tr>
+					<tr>
+						<center>
+							<table>
+								<tr>
+									<td>
+										<div align="center">
+											计划工期
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											实际工期
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											时间差异
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div align="center">
+											42
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											45
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											-3
+										</div>
+									</td>
+								</tr>
+							</table>
+						</center>
+					</tr>
+					<tr>
+						<div align="center">
+							项目总规模差异表（人天）
+						</div>
+					</tr>
+					<tr>
+						<center>
+							<table>
+								<tr>
+									<td>
+										<div align="center">
+											计划规模
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											实际规模
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											规模差异
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div align="center">
+											138
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											1578
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											-19.8
+										</div>
+									</td>
+								</tr>
+							</table>
+						</center>
+					</tr>
+					<tr>
+						<div align="center">
+							项目成本差异表（元）
+						</div>
+					</tr>
+					<tr>
+						<center>
+							<table>
+								<tr>
+									<td>
+										<div align="center">
+											预算成本
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											计划总成本
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											实际成本
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											直接成本差异
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											成本差异
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div align="center">
+											75160
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											90660
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											85528
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											-10368
+										</div>
+									</td>
+									<td>
+										<div align="center">
+											5132
+										</div>
+									</td>
+								</tr>
+							</table>
+						</center>
+					</tr>
+				</table>
+			</center>
+			&nbsp;&nbsp;结论：从项目规模、成本差异表看，尽管略有差异，但基本控制在计划以内。
+			<div class="title2">
+				五、项目管理的评估总结和建议
+			</div>
+			&nbsp;&nbsp;1.&nbsp;基本遵循企业的质量体系实施项目管理过程。
+			<br>
+			&nbsp;&nbsp;2.&nbsp;根据项目的具体情况，对企业的质量体系的执行活动进行了定制。
+			<br>
+			&nbsp;&nbsp;3.&nbsp;由于大家对项目管理的认识不同，项目管理的磨合时间较长。
+			<br>
+			&nbsp;&nbsp;4.&nbsp;建议：大家对项目管理过程应该有统一认识；力争有比较客观准确的项目计划做基础，才可更好地实现项目跟踪管理。
+			<br>
+			&nbsp;&nbsp;5.&nbsp;建议：项目计划前期应增加一个过程：项目计划的规划过程，对项目计划过程做一个时间规划和任务规划。
+			<br>
+			&nbsp;&nbsp;6.&nbsp;建议：项目计划期间，管理，开发，质量保证三方应相互明确各自任务的内容和相互的职责，以提高项目计划的准确性和透明度，为项目实施过程的相互协作打下基础。
+			<br>
+			<div class="title2">
+				六、质量保证的评估总结和建议
+			</div>
+			&nbsp;&nbsp;1.&nbsp;质量保证在项目中，基本按计划进行；达到了预期的效果，尤其对关键的质量控制。
+			<br>
+			&nbsp;&nbsp;2.&nbsp;系统测试阶段质量保证人员的参与，对产品的验错起到很好的作用。
+			<br>
+			&nbsp;&nbsp;3.&nbsp;建议：以后的功能测试应增加质量保证人员。
+			<br>
+			&nbsp;&nbsp;4.&nbsp;开发技术的评估总结和建议
+			<br>
+			&nbsp;&nbsp;5.&nbsp;开发人员具有一定的敬业精神和实施能力
+			<br>
+			&nbsp;&nbsp;6.&nbsp;开发人员对项目计划的时间概念不强
+			<br>
+			&nbsp;&nbsp;7.&nbsp;建议：增强项目计划的时间观念。
+			<br>
+
+
+		</div>
+
+		<div class="content" style="margin-bottom: 50px">
+			<br />
+			<p align="right">
+				版权所有&nbsp;©&nbsp;北京邮电大学&nbsp;&nbsp;地址:北京市西土城路10号&nbsp;&nbsp;邮编:100876
+			</p>
+		</div>
+	</body>
+</html>

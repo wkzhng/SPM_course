@@ -1,0 +1,98 @@
+/**
+ * 
+ */
+package com.buptsse.spm.service.impl;
+
+import java.security.spec.PSSParameterSpec;
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.transaction.Transactional;
+
+import org.springframework.stereotype.Service;
+
+import com.buptsse.spm.dao.UserDao;
+import com.buptsse.spm.domain.User;
+import com.buptsse.spm.service.IUserService;
+
+/**
+ * @author Ren Zhengzhi
+ * @date 2015年10月17日 下午3:53:50
+ * @description
+ * @modify	Han Xinyu Xue Yifei 
+ * @modifyDate 2015年10月24日 下午10:53:50
+ */
+
+
+@Transactional
+@Service
+public class UserServiceImpl implements IUserService {
+	
+	@Resource
+	private UserDao userDao;
+	/* (non-Javadoc)
+	 * @see com.buptsse.spm.service.IUserService#findUser(java.lang.String, java.lang.String)
+	 */
+	@Override
+	public User findUser(String userName, String password) {
+		// TODO Auto-generated method stub
+		User user= new User();
+		user.setUserName(userName);
+		user.setPassword(password);
+		user=userDao.findUser(user);
+		if(user==null || !user.getPassword().equals(password)){
+			return null;
+		}else{
+			return user;
+		}
+	}
+	
+	public User findUser(String userName){
+		User user = new User();
+		user.setUserName(userName);
+		user.setId(userName);
+		user = userDao.findUser(user);
+		if(user == null){
+			return null;
+		}else{
+			return user;
+		}
+	}
+	
+
+	/* (non-Javadoc)
+	 * @see com.buptsse.spm.service.IUserService#insertUser(com.buptsse.spm.domain.User)
+	 */
+	@Override
+	public boolean insertUser(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.buptsse.spm.service.IUserService#searchUser(java.lang.String)
+	 */
+	@Override
+	public List<User> searchUser(String choose) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.buptsse.spm.service.IUserService#deleteUser(java.lang.String)
+	 */
+	@Override
+	public boolean deleteUser(String username) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.buptsse.spm.service.IUserService#addUser(com.buptsse.spm.domain.User)
+	 */
+	@Override
+	public boolean addUser(User user) {
+		return userDao.addUser(user);
+	}
+
+}

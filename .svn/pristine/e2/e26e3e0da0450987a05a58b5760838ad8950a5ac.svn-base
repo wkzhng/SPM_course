@@ -1,0 +1,110 @@
+package com.buptsse.spm.service.impl;
+
+
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.transaction.Transactional;
+
+import org.springframework.stereotype.Service;
+
+import com.buptsse.spm.dao.ISelectCourseDao;
+import com.buptsse.spm.domain.Course;
+import com.buptsse.spm.service.ISelectCourseService;
+
+
+/**
+ * @author xinyu han
+ * @date 2015年11月01日 下午3:53
+ * @description 选课的service层接口定义 
+ * @modify
+ * @modifyDate 
+ */
+
+@Transactional
+@Service
+public class SelectCourseServiceImpl implements ISelectCourseService{
+
+	@Resource
+	private ISelectCourseDao iSelectCourseDao;
+	
+	/*
+	 * (non-Javadoc)
+	 * @see com.buptsse.service.ISelectCourseService#findCourse(java.lang.String)
+	 */
+	@Override
+	public Course findCourse(String studentId) {
+		// TODO Auto-generated method stub
+		Course course=new Course();
+		course = iSelectCourseDao.findCourse(studentId);
+		if(course != null){
+			return course;
+		}
+		return null;
+	}
+
+	@Override
+	public boolean insertCourse(Course course) {
+		// TODO Auto-generated method stub
+		return iSelectCourseDao.insertCourse(course);
+	}
+
+	@Override
+	public boolean deleteCourse(String studentId) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateCourse(Course course) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * @see com.buptsse.service.ISelectCourseService#findAllCourse()
+	 */
+	@Override
+	public List<Course> findAllCourse() {
+		// TODO Auto-generated method stub
+		return iSelectCourseDao.findAllCourse();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * @see com.buptsse.service.ISelectCourseService#changeStatus(java.lang.String, int, int)
+	 */
+	@Override
+	public boolean changeStatus(String studentId, int preStutus, int newStatus) {
+		// TODO Auto-generated method stub
+		Course course = new Course();
+		course = iSelectCourseDao.findCourse(studentId);
+		if(preStutus == (newStatus - 1)){
+			switch (preStutus) {
+			case 1:
+				course.setStatus("待确认");
+				break;
+			case 2:
+				course.setStatus("已选中");
+				break;
+			case 3:
+				iSelectCourseDao.deleteCourse(course);
+				break;
+			default:
+				break;
+			}
+			iSelectCourseDao.updateCourse(course);
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	@Override
+	public boolean savaCourse(Course course) {
+		// TODO Auto-generated method stub
+		
+		return false;
+	}
+}

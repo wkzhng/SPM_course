@@ -1,0 +1,95 @@
+package com.buptsse.spm.action;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.annotation.Resource;
+
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.buptsse.spm.domain.Course;
+import com.buptsse.spm.domain.User;
+import com.buptsse.spm.service.ISelectCourseService;
+import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ActionSupport;
+
+/**
+ * @author xinyu han
+ * @date 2015年11月01日 下午4:51
+ * @description 学生选课的action层实现 
+ * @modify
+ * @modifyDate 
+ */
+public class SelectCourse4Student extends ActionSupport{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private static Logger LOG = LoggerFactory.getLogger(SelectCourse4Student.class);
+	private User user;
+	private Course course;
+	
+	@Resource
+	private ISelectCourseService selectCourseService;
+	 /** 
+	 * @return
+	 */
+	
+	public String listCourse(){
+		//通过session获取用户user信息
+		Map session = (Map) ActionContext.getContext().getSession();
+		Map request=(Map)ActionContext.getContext().get("request");
+		user = (User) session.get("user");
+		
+		
+		
+		//LOG.error("username:" + user.getUserName());
+		course = selectCourseService.findCourse(String.valueOf(user.getId()));
+		
+		if( course != null){
+			request.put("courseList", course);
+			return SUCCESS;
+		}
+		else{
+			//此时认为该学生还没有注册课程相关信息
+			System.err.println(user.getId()+":"+user.getUserName());
+			System.err.println("选课时的用户名为："+user.getUserName());
+			course = new Course();
+			course.setStudentId(String.valueOf(user.getId()));
+			//System.err.println("ID是这样的"+course.getStudentId());
+			course.setName(user.getUserName());
+			course.setClassId("你猜我在几班");
+			course.setStatus("未选");
+			course.setEmail("我就没有邮箱~");
+			course.setTelno("我也没有电话号码");
+			course.setDailyGrade(0);
+			course.setFinalGrade(0);
+			course.setMidGrade(0);
+			course.setPracticeGrade(0);
+			course.setTotalGrade(0);
+			selectCourseService.insertCourse(course);
+			request.put("courseList", course);
+			return SUCCESS;
+		}
+		
+		//List<Course> list= selectCourseService.findAllCourse();
+		
+	}
+	
+	public String No2Select(){
+		Map session = (Map) ActionContext.getContext().getSession();
+		Map request=(Map)ActionContext.getContext().get("request");
+		user = (User) session.get("user");
+		
+		if(selectCourseService.changeStatus(user.getUserId(), 1, 2)){
+			this.listCourse();
+			return SUCCESS;
+		}
+		else{
+			return ERROR;
+		}
+	}
+}

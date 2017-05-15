@@ -1,0 +1,85 @@
+package com.buptsse.spm.dao.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.log4j.Logger;
+import org.springframework.stereotype.Repository;
+
+import com.buptsse.spm.dao.Sp_chapter_videoDao;
+import com.buptsse.spm.domain.Sp_chapter_video;
+
+@Repository
+public class Sp_chapter_videoDaoImpl extends BaseDAOImpl<Sp_chapter_video> implements Sp_chapter_videoDao{
+	private static Logger LOG = Logger.getLogger(Sp_chapter_videoDaoImpl.class);
+	
+	@Override
+	public List<Sp_chapter_video> find(String hql, Sp_chapter_video[] param) {
+		// TODO Auto-generated method stub
+		return super.find("from Sp_chapter_video where chapter_id= :param", param);
+	}
+
+	@Override
+	public Sp_chapter_video get(String hql, Sp_chapter_video[] param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Long count(String hql, Sp_chapter_video[] param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer executeHql(String hql, Sp_chapter_video[] param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Sp_chapter_video findSp_chapter_video(Sp_chapter_video Sp_chapter_video) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean insertSp_chapter_video(Sp_chapter_video Sp_chapter_video) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Sp_chapter_video> searchSp_chapter_video(List<Object> choose) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean deleteSp_chapter_video(String username) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean addSp_chapter_video(Sp_chapter_video sp_chapter) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Sp_chapter_video> findAllInfo() {
+		// TODO Auto-generated method stub
+		try{
+			List<Sp_chapter_video> list = new ArrayList<Sp_chapter_video>();
+			list = super.find("from Sp_chapter_video s order by s.chapter_id");
+			System.out.println("这里是在sp_chapter_video_Dao");
+			return list;			
+		}catch(Exception e){
+			e.printStackTrace();
+			LOG.error(e);
+			return null;
+		}
+	}
+	
+}

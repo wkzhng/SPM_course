@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans default-autowire="byName" default-lazy-init="true">
+	<!-- 	 	配置LoginAction -->
+	<bean id="LoginAction" scope="prototype" class="com.buptsse.spm.action.LoginAction"/>
+	
+	<!-- 	配置registerAction -->
+	<bean id="RegisterAction" scope="prototype" class="com.buptsse.spm.action.RegisterAction"/>
+	 
+	<!-- 	 	配置courseSchedule4StudentAction -->
+	<bean id="CourseSchedule4StudentAction" scope="prototype" class="com.buptsse.spm.action.CourseSchedule4StudentAction"/>
+	
+	<!-- 	 	配置SelectCourse4Student -->
+	<bean id="SelectCourse4Student" scope="prototype" class="com.buptsse.spm.action.SelectCourse4Student"/>
+	
+	<!-- 	 	配置SelcetCourse4Teacher -->
+	<bean id="SelcetCourse4Teacher" scope="prototype" class="com.buptsse.spm.action.SelcetCourse4Teacher"/>
+	
+	
+</beans>

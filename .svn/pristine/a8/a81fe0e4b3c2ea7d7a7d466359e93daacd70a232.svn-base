@@ -1,0 +1,14 @@
+package com.buptsse.spm.dao;
+
+import java.util.List;
+
+import com.buptsse.spm.domain.Sp_chapter_video;
+
+public interface Sp_chapter_videoDao {
+	public Sp_chapter_video findSp_chapter_video(Sp_chapter_video Sp_chapter_video);
+	public boolean insertSp_chapter_video(Sp_chapter_video Sp_chapter_video);
+	public List<Sp_chapter_video> searchSp_chapter_video(List<Object> choose);
+	public boolean deleteSp_chapter_video(String username);
+	public boolean addSp_chapter_video(Sp_chapter_video sp_chapter);
+	public List<Sp_chapter_video> findAllInfo();
+}

@@ -1,0 +1,10 @@
+package com.buptsse.spm.service;
+
+import java.util.List;
+
+import com.buptsse.spm.domain.Sp_chapter_video;
+
+public interface ICourseSchedule4StudentService {
+	public List<Sp_chapter_video> getAllInfo();
+
+}

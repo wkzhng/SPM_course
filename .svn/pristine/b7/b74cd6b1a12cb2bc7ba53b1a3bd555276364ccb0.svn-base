@@ -1,0 +1,290 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Effort.files/filelist.xml">
+<link rel="stylesheet" type="text/css" href="tableStyle.css">
+<link rel="stylesheet" type="text/css" href="textStyle.css">
+<title>6</title>
+</head>
+
+<body>
+  <h1>  案例说明-《校务通管理系统》的规模成本估算
+  </h1>
+    <div class="headline">  案例说明-《校务通管理系统》的规模成本估算
+  </div>
+<div class="context">
+&nbsp;&nbsp;估算是循序渐进的过程，随着项目的不断发展，估算可以重复多次进行的，而且是逐步精确的。本项目采用自下而上和参数法综合的估算方法，具体过程如下：
+<div class="title1">一、签订合同前</div>
+&nbsp;&nbsp;开始签订合同的时候，根据以往类似项目的经验，采用类比估算方法，进行粗略的估算：根据用户的要求采用B/S结构，公司JSP+SQL Server的技术比较成熟，以前成功完成过类似的项目，根据SOW的说明，基本上需要2-3个开发人员，2个月左右的开发时间，基本上是4-6人月的规模，所以，10-15万可以作为合同的参考价格。
+<div class="title1">二、合同签署后</div>
+&nbsp;&nbsp;合同签署之后，根据现有的资源和WBS分解的结果，进一步细化估算，由于WBS分解是针对项目的功能进行的分解，在成本估算的时候，首先估算每个任务的开发规模，然后在通过系数获得相应的质量、管理任务的规模，从而计算直接成本，然后计算间接成本，以及总成本，具体过程如下：
+<br/>&nbsp;&nbsp;资源
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;          人力资源
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          2个开发人员
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          1个项目管理人员
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          1个项目质量人员
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          1个配置管理人员
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;          设备资源（作为间接成本计算）
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          3台电脑
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          1台服务器
+<center>
+  <br/>&nbsp;&nbsp;项目规模估算表:(注：规模单位为人/天)
+
+<table>
+  <tr>
+    <td>WBS</td>
+    <td>名称</td>
+    <td>估计值（人天）</td>
+    <td>小计（人天）</td>
+    <td>总计（人天）</td>
+  </tr>
+    <tr>
+    <td>1</td>
+    <td>通用功能</td>
+    <td></td>
+    <td>31</td>
+    <td>103</td>
+  </tr>
+   <tr>
+    <td>1.1</td>
+    <td>电子课表</td>
+    <td>8</td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>1.2</td>
+    <td>会议通知和公告</td>
+    <td>3</td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>1.3</td>
+    <td>个人日记</td>
+    <td>5</td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>1.4</td>
+    <td>通讯录</td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>1.5</td>
+    <td>教师答疑</td>
+    <td>5</td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>1.6</td>
+    <td>作业布置和批改</td>
+    <td>8</td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>2</td>
+    <td>日常业务管理功能</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>2.1</td>
+    <td>招生管理</td>
+    <td></td>
+    <td>26</td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>2.1.1</td>
+    <td>报名</td>
+    <td>3</td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>2.1.2</td>
+    <td>招生</td>
+    <td>5</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2.1.3</td>
+    <td>分班</td>
+    <td>10</td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>2.1.4</td>
+    <td>统计查询</td>
+    <td>8</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2.2</td>
+    <td>学生日常管理</td>
+    <td></td>
+    <td>10</td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>2.2.1</td>
+    <td>学生档案管理</td>
+    <td>4</td>
+    <td></td>
+    <td></td>
+  </tr><tr>
+    <td>2.2.2</td>
+    <td>学生考勤管理</td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>2.2.3</td>
+    <td>学生奖惩</td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+  </tr><tr>
+    <td>2.2.4</td>
+    <td>学生变动</td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>2.3</td>
+    <td>教务管理</td>
+    <td></td>
+    <td>31</td>
+    <td></td>
+  </tr><tr>
+    <td>2.3.1</td>
+    <td>教师日常管理</td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>2.3.2</td>
+    <td>年级/班级设置</td>
+    <td>4</td>
+    <td></td>
+    <td></td>
+  </tr><tr>
+    <td>2.3.3</td>
+    <td>学科设置</td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>2.3.4</td>
+    <td>年班级课程设计</td>
+    <td>5</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2.3.5</td>
+    <td>排课表</td>
+    <td>9</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2.3.6</td>
+    <td>考试管理</td>
+    <td>4</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2.3.7</td>
+    <td>评价</td>
+    <td>5</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2.4</td>
+    <td>教师备课系统</td>
+    <td>（外包5000元）</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2.5</td>
+    <td>资源库系统</td>
+    <td>（外包3000元）</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2.6</td>
+    <td>网上考试</td>
+    <td>（外购3000元）</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2.7</td>
+    <td>聊天室</td>
+    <td>（已存在）</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>2.8</td>
+    <td>论坛</td>
+    <td>（已存在）</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  </table>
+</center>
+<br/>&nbsp;&nbsp;估算步骤如下：
+<br/>&nbsp;&nbsp;1.         获取项目分解结果WBS
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;a)        任务分解是根据项目的功能进行分解的
+<br/>&nbsp;&nbsp;2.         计算开发成本
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;a)        由于任务分解的结果主要是针对开发任务的分解，管理任务和质量任务可以通过计算开发任务得到，根据以往经验，管理任务和质量任务=20%*开发任务。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;b)        从表6-3得知项目规模是103人天，开发人员成本参数=480元/天，则内部的开发成本=480元/天*103天=49440元
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;c)         加上外包外购的部分软件成本5000+3000+3000=11000元，则开发成=49440+11000=60440元。
+<br/>&nbsp;&nbsp;3.         计算管理、质量成本
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;a)        项目的管理和质量成本=开发成本*20%=12088元
+<br/>&nbsp;&nbsp;4.         直接成本=60440+12088=72528元
+<br/>&nbsp;&nbsp;5.         计算间接成本
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;a)        间接成本包括前期合同费用、房祖水电、培训、员工福利、客户服务等
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;b)        根据以往经验，采用公式：间接成本=25%直接成本=18132元
+<br/>&nbsp;&nbsp;6.         计算总估算成本
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;a)        项目总估算成本=72528+18132=90660元。
+<br/>&nbsp;&nbsp;7.         重新评估项目的报价
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;a)        重新评估一下项目的报价准确性，当然这时候，项目的合同已经签署了，报价是不能更改的，但是通过再次的评估可以进一步明确企业的项目运作和利润情况等，
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;b)         如果项目的利润是30%，其中风险基金10%，利润15%，税费5%。则项目的总报价=90660*1.3=117858元，应该说报价还是比较合适的。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;另外，可以采用简便的算法进行估算，企业的报价可以通过开发规模的估算直接得出，例如如果成本系数为2.5万元/人月，一个人月22人天，则项目报价=2.5*103/22=117045元。
+<div class="title1">三、成本预算</div>
+&nbsp;&nbsp;在下章的进度计划编制完成时，会根据各项任务的情况，安排各项任务的预算成本，最后可以得到比较详细的成本分配情况。见进度计划案例。
+<div class="title1">四、成本的跟踪控制</div>
+&nbsp;&nbsp;在项目跟踪控制的每个阶段，会根据项目的具体情况重新估算，预测项目完成后的成本，详见 “项目跟踪控制”成本跟踪。
+<br/>&nbsp;&nbsp;
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<% 
+//----------------------------------------------------------------
+ //Project: SPM System (Client SubSystem) 
+// JSP Name  : footer.jsp 
+// PURPOSE : 主页面显示
+// HISTORY：
+//	Create：
+//	Modify：Han Xinyu Xue yifei    2015.10.24
+//  Copyright  : BUPTSSE   
+//----------------------------------------------------------------- %>
+<%@	taglib uri="/struts-tags" prefix="s"%>
+<html>
+	<head>
+		<title>"教育部-IBM精品课程建设项目”软件项目管理课程</title>
+	</head>
+	<frameset rows="22.8%,*,8.8%" border="0">
+		<frame src="./jsp/top.jsp">
+		<frameset cols="22%,*" border="0">
+			<frame src="./jsp/left.jsp">
+			<frame src="./jsp/right.jsp" name="right">
+		</frameset>
+		<frame src="./jsp/footer.jsp">
+	</frameset>
+</html>

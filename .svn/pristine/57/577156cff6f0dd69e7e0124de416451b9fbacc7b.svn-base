@@ -1,0 +1,22 @@
+package com.buptsse.spm.dao;
+
+import java.util.List;
+
+import com.buptsse.spm.domain.SpChapterVideo;
+
+/**
+ * @author yifei xue
+ * @date 2015年11月01日 下午2:46
+ * @description	视频章节信息持久层接口定义，包括查找所有视频信息（章节图片、视频路径、学习顺序）
+ * @modify
+ * @modifyDate 
+ */
+
+public interface ISpChapterVideoDao {
+//	public SpChapterVideo findSp_chapter_video(SpChapterVideo SpChapterVideo);
+//	public boolean insertSp_chapter_video(SpChapterVideo SpChapterVideo);
+//	public List<SpChapterVideo> searchSp_chapter_video(List<Object> choose);
+//	public boolean deleteSp_chapter_video(String username);
+//	public boolean addSp_chapter_video(SpChapterVideo sp_chapter);
+	public List<SpChapterVideo> findAllInfo();
+}

@@ -1,0 +1,16 @@
+package com.buptsse.spm.service;
+import java.util.List;
+import com.buptsse.spm.domain.SpChapterVideo;
+
+/**
+ * @author yifei xue
+ * @date 2015年11月01日 下午3:47
+ * @description 视频进度的service层接口定义 
+ * @modify
+ * @modifyDate 
+ */
+
+public interface ICourseSchedule4StudentService {
+	public List<SpChapterVideo> getAllInfo();
+
+}

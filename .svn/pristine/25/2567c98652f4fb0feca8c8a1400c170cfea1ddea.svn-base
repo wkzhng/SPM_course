@@ -1,0 +1,160 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%
+	String path = request.getContextPath();
+// 	System.out.println(path); /SPM_Project
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+// 	System.out.println(basePath);
+// basePath获取到了 http://localhost:8080/SPM_Project/
+%>
+
+<%@ taglib uri="/struts-tags" prefix="s"%>
+<html>
+	<head>
+		<title>"教育部-IBM精品课程建设项目"软件项目管理课程</title>
+		<link href="./css/fontStyle.css" rel="stylesheet" type="text/css" />
+		<script type="text/css">
+			#test1{
+				color:red;
+			}
+		</script>
+	</head>
+	<body>
+	<script>
+		function ccc(cc){
+		// 	window.open("index.html?inputStr=" + cc.name);//传入参数
+		// 	window.open("videoShow.jsp");//传入参数
+		// 	alert();
+		window.open('videoShow.jsp', '窗口名称', 'width=1000, height=700, top=0,left=0, toolbar=no,menubar=no, scrollbars=no, resizable=no,location=no, status=no');
+		}
+	</script>
+		<div class="article">
+			<h1><center>我的学习进度：</center></h1>
+			<input id="inputid" type="hidden">
+			<h2>
+				教学视频
+			</h2>	
+<%-- 			<s:if test="#session.user.position=='管理员'"> --%>
+<!-- 				<form action="enterbasicinfo.action?name=lianxiwomen" method="post"> -->
+<!-- 					<input type="submit" class="btn btn-default" value="内容修改"> -->
+<!-- 				</form> -->
+<%-- 				</s:if> --%>
+<!-- 			<div class="content"> -->
+<!-- 				<p> -->
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a   onclick="ccc(this)" name="0">序：软件项目管理概述 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;第一篇：软件项目初始 -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="1" onclick="ccc(this)">第1章 软件项目立项过程 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="2" onclick="ccc(this)">第2章 软件项目生存期模型选择 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;第二篇：软件项目计划 -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="3" onclick="ccc(this)">第3章 软件项目范围计划—需求管理 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="4" onclick="ccc(this)">第4章 软件项目范围计划—任务分解 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="5" onclick="ccc(this)">第5章 软件项目成本计划 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="6" onclick="ccc(this)">第6章 软件项目进度计划 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="7" onclick="ccc(this)"> 第7章 软件项目质量计划 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="8" onclick="ccc(this)">第8章 软件项目配置管理 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="9" onclick="ccc(this)">第9章 软件项目人力资源计划 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="10" onclick="ccc(this)">第10章 软件项目沟通计划 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="11" onclick="ccc(this)">第11章 项目管理风险计划 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="12" onclick="ccc(this)">第12章 软件项目合同计划 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="13" onclick="ccc(this)"> 第13章 软件项目集成计划 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;第三篇：软件项目执行控制 -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="14" onclick="ccc(this)">第14章 软件项目执行控制过程 </a> -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					第四篇：软件项目结束 -->
+<!-- 				</p> -->
+<!-- 				<p> -->
+
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a  name="15" onclick="ccc(this)">第15章 软件项目结束过程 </a> -->
+<!-- 				</p> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
+<!-- 		tr里面的东西作用就是一行 th是每一列的名字 td是每一个项的内容-->
+		<s:iterator value="#request.scv">
+   			<div class="article">
+   				<div class="content">
+   					<center><a href="" ><img src="./images/chapter/<s:property value="video_pic"/>"></a></center>
+    				<center>
+    						<a href="">课程名称:&nbsp;&nbsp;<s:property value="video_name"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    						<a>时长:&nbsp;&nbsp;<s:property value="video_time"/>&nbsp;&nbsp;min</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    						<a>课程简介:&nbsp;&nbsp;<s:property value="video_desc"/></a>
+    				</center>
+   				</div>
+   			</div>
+   		</s:iterator> 
+		
+		
+	</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Contract.files/filelist.xml">
+<link rel="stylesheet" type="text/css" href="tableStyle.css">
+<link rel="stylesheet" type="text/css" href="textStyle.css">
+
+<title>合同登记编号：</title>
+</head>
+<body>
+  <h1>技术开发合同</h1>
+  <div class="context">
+合同登记编号： 
+<br/>
+<center>
+<div class="headline2">技术开发合同</div>
+<br/>
+<br/>
+<b>
+<br/>项目名称：         校务通管理系统          
+<br/>委托人（甲方）：      XXXXX省教育委员会           
+<br/>研究开发人（乙方）：  北京科力拓技术发展有限公司     
+<br/>签订地点：  北京市
+<br/>签订日期：   2003 年 4 月 10日
+<br/>有效期限：   2003 年 4 月 10日 至 2003年 12 月 16 日
+<br/>北京技术市场管理办公室
+</b>
+<br/>
+<br/>
+<br/>
+<br/>
+</center>
+<br/> 
+<br/>
+<br/>
+<br/>
+<br/>
+&nbsp;&nbsp;根据《中华人民共和国合同法》的规定，合同双方就  校务通管理软件系统开发  项目的技术开发（该项目属于   /    计划），经协商一致，签定本合同。
+<div class="title1">一、标的技术的内容、范围及要求：</div>
+&nbsp;&nbsp;根据甲方的要求，乙方完成校务通软件系统的研制开发。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;1、       根据甲方要求进行系统方案设计，要求建立B/S结构的,基于的Sql server数据库、NT服务器和J2EE技术的三层架构体系的综合服务软件系统。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;2、       配合甲方，在与整体系统相融合的基础上，建立系统运行的软硬件环境。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;3、       具体需求见SOW
+<div class="title1">二、应达到的技术指标和参数</div>
+&nbsp;&nbsp;1、             系统应满足并行登陆,并行查询的速度要求。其中主要内容包括
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;（1）保证1000人以上可以同时登陆系统
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;（2）所有查询速度应在10秒以内
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;（3）保证数据的每周备份
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;（4）工作日期间不能当机
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;（5）出现问题应在10分钟内恢复。
+<br/>&nbsp;&nbsp;2、             系统的主要功能是应满足双方认可的需求规格,不可以随意改动。
+<div class="title1">三、研究开发计划</div>
+&nbsp;&nbsp;1、             第一阶段：乙方在合同签订后7个工作日内，完成合同内容的系统设计方案。
+<br/>&nbsp;&nbsp;2、             第二阶段：完成第一阶段的系统设计方案之后，乙方于50个工作日内完成系统基本功能的开发。
+<br/>&nbsp;&nbsp;3、             第三阶段：完成第一和第二阶段的任务之后，由甲方配合乙方于3个工作日内完成系统在XXX信息中心的调试、集成。
+<div class="title1">四、研究开发经费、报酬及其支付或结算方式</div>
+&nbsp;&nbsp;1、             研究开发经费是指完成本项目研究开发工作所需的成本。报酬指本项目开发成果的使用费和研究开发人员的科研补贴。
+<br/>&nbsp;&nbsp;2、             本项目研究开发经费和报酬（人民币大写）：XXX万元整。
+<br/>&nbsp;&nbsp;3、             支付方式：分期支付。
+<br/>&nbsp;&nbsp;本合同签订之日起生效，甲方在五个工作日内应付乙方合同总金额的50％，计人民币XXX.00元（人民币大写XXX元整），验收后甲方在五个工作日内付清全部合同余款，计人民币XXX.00（人民币大写XXX元整）。
+<div class="title1">五、利用研究开发经费购置的设备、器材、资料的财产权属：</div>
+<div class="title1">六、履行的期限、地点和方式。</div>
+&nbsp;&nbsp;本合同自2003年8月16日至2003年11月16 日在北京履行。
+<br/>&nbsp;&nbsp;本合同的履行方式：
+<br/>&nbsp;&nbsp;甲方责任
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;1、             甲方全力协助乙方完成合同内容。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;2、             合同期内甲方为乙方提供专业性接口技术支持。
+<br/>&nbsp;&nbsp;乙方责任：
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;1、             乙方按甲方要求完成合同内容。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;2、             乙方愿提供在实现功能的前提下，进一步予以完善。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;3、             乙方在合同商定的时间内保证系统正常运行。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;4、             乙方在项目验收后提供一年免费维护。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;5、             未经甲方同意，乙方不得向第三方提供本系统中涉及专业的技术内容和所有的系统数据。
+<div class="title1">七、技术情报和资料的保密。</div>
+&nbsp;&nbsp;本合同中的相关专业技术内容和所有的系统数据，归甲方所有，未经甲方同意乙方不得提供给第三方。
+<div class="title1">八、技术协作的内容:</div>
+&nbsp;&nbsp;见系统设计方案。
+<div class="title1">九、技术成果的归属和分享</div>
+&nbsp;&nbsp;1.     专利申请权：/。
+<br/>&nbsp;&nbsp;2.     技术秘密的使用权、转让权：/。
+<div class="title1">十、验收的标准和方式：</div>
+&nbsp;&nbsp;研究开发所完成的技术成果，达到了本合同第二条所列技术指标，按国家标准，采用一定的方式验收，由甲方出具技术项目验收证明。
+<div class="title1">十一、风险的承担</div>
+&nbsp;&nbsp;在履行本合同的过程中，确因在现有水平和条件下难以克服的技术困难，导致研究开发部分或全部失败所造成的损失，风险责任由甲方承担50  %，乙方承担 50 %。
+<br/>&nbsp;&nbsp;本项目风险责任确认的方式：双方协商。
+<div class="title1">十二、违约金和损失赔偿额的计算：</div>
+&nbsp;&nbsp;除不可抗力因素外（指发生战争、地震、洪水、飓风或其它人力不能控制的不可抗力事件），甲乙双方须遵守合同承诺，否则视为违约并承担违约责任：
+<br/>&nbsp;&nbsp;1、    如果乙方不能按期完成软件开发工作并交给甲方使用，乙方应向甲方支付延期违约金。每延迟一周，乙方向甲方支付合同总额0.5％的违约金，不满一周按一周计算，但违约金总额不得超过合同总额的5%；
+<br/>&nbsp;&nbsp;2、    如果甲方不能按期向甲方支付合同款项，甲方应向乙方支付延期违约金。每延迟一周，甲方向乙方支付合同总额0.5％的违约金，不满一周按一周计算，但违约金总额不得超过合同总额的5%。
+<div class="title1">十三、解决合同纠纷的方式：</div>
+&nbsp;&nbsp;在履行本合同的过程中发生争议，双方当事人和解或调解不成，可采取仲裁或按司法程序解决。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;1、              双方同意由北京市仲裁委员会仲裁。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;2、              双方约定向北京市人民法院起诉。
+<div class="title1">十四、名词和术语解释</div>
+&nbsp;&nbsp;如有，见合同附件。
+<div class="title1">十五、其他</div>
+&nbsp;&nbsp;1、              本合同一式 6 份，具有同等法律效力。其中正式两份，甲乙双方各执一份；副本 4 份，交由乙方。
+<br/>&nbsp;&nbsp;2、              本合同未尽事宜，经双方协商一致，可在合同中增加补充条款，补充条款是合同的组成部分。
+<br/>
+</div>
+
+      <div class="content" style="margin-bottom: 50px">
+        <br />
+        <p align="right">
+          版权所有&nbsp;©&nbsp;北京邮电大学&nbsp;&nbsp;地址:北京市西土城路10号&nbsp;&nbsp;邮编:100876
+        </p>
+      </div>
+</body>
+
+</html>

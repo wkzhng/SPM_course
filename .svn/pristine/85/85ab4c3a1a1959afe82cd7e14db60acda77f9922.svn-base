@@ -1,0 +1,34 @@
+package com.buptsse.spm.service.impl;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.transaction.Transactional;
+
+import org.springframework.stereotype.Service;
+
+import com.buptsse.spm.dao.Sp_chapter_videoDao;
+import com.buptsse.spm.dao.UserDao;
+import com.buptsse.spm.domain.Sp_chapter_video;
+import com.buptsse.spm.service.ICourseSchedule4StudentService;
+import com.buptsse.spm.service.IUserService;
+
+@Transactional
+@Service
+public class CourseSchedule4StudentServiceImpl implements ICourseSchedule4StudentService{
+	@Resource
+	private Sp_chapter_videoDao spVideoDao;
+	
+	@Override
+	public List<Sp_chapter_video> getAllInfo() {
+		// TODO Auto-generated method stub
+		List<Sp_chapter_video> spVideo = spVideoDao.findAllInfo();
+		if(spVideo == null){
+			System.out.println("spVideo为空!");
+		}else{
+			System.out.println("spVideo不为空！");
+		}
+		return spVideo;
+	}
+
+}

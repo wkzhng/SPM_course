@@ -1,0 +1,78 @@
+/**
+ * 
+ */
+package com.buptsse.spm.action;
+
+import javax.annotation.Resource;
+
+import org.apache.commons.lang3.StringUtils;
+import org.apache.struts2.ServletActionContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.buptsse.spm.domain.User;
+import com.buptsse.spm.service.IUserService;
+import com.opensymphony.xwork2.ActionSupport;
+
+/**
+ * @author Xue Yifei
+ * @date 2015年10月17日 下午3:53:50
+ * @description
+ * @modify
+ * @modifyDate 2015年10月24日 下午11:53:50
+ */
+public class RegisterAction extends ActionSupport {
+	private static Logger LOG = LoggerFactory.getLogger(RegisterAction.class);
+	private User user;
+	
+	@Resource
+	private IUserService userService;
+	
+	/**
+	 * 
+	 * @discription 实现注册功能
+	 */
+	public String register() {
+		LOG.error("username:" + user.getUserName());
+		if (user == null){
+			LOG.error("USER对象为空！");
+		}
+		if (StringUtils.isBlank(user.getUserName()) || StringUtils.isBlank(user.getPassword())){
+			ServletActionContext.getRequest().setAttribute("registerMsg", "用户名或密码未输入！");
+			return "error";
+		}
+		LOG.error("开始保存数据");
+		try {
+			if(user.getPassword().equals(user.getPassword1())){
+				user.setUserId(user.getUserName());
+				user.setId(user.getUserName());
+				user.setPosition("学生");
+				userService.addUser(user);
+				ServletActionContext.getRequest().setAttribute("registerMsg", "注册成功！");
+				return SUCCESS;
+			}else{
+				ServletActionContext.getRequest().setAttribute("registerMsg", "对不起，两次输入的密码不一致，请重新输入！");
+				return ERROR;
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		LOG.error("保存数据");
+		return SUCCESS;
+	}
+	/**
+	 * @return the user
+	 */
+	public User getUser() {
+		return user;
+	}
+	/**
+	 * @param user the user to set
+	 */
+	public void setUser(User user) {
+		this.user = user;
+	}
+	
+	
+}

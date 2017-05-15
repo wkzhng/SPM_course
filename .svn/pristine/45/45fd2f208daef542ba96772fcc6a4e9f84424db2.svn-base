@@ -1,0 +1,82 @@
+package com.buptsse.spm.action;
+
+import java.util.Map;
+
+import javax.annotation.Resource;
+
+import org.apache.commons.lang3.StringUtils;
+import org.apache.struts2.ServletActionContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.buptsse.spm.domain.User;
+import com.buptsse.spm.service.IUserService;
+import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ActionSupport;
+
+/**
+ * @author xinyu han
+ * @date 2015年10月21日 上午9:22:50
+ * @description 实现登录页面逻辑
+ * @modify	yifei Xue
+ * @modifyDate 2015年10月24日 上午11:30:50
+ */
+
+public class LoginAction extends ActionSupport
+{
+	private static Logger LOG = LoggerFactory.getLogger(LoginAction.class);
+	private User user;
+	
+	@Resource
+	private IUserService userService;
+	/**
+	 * 
+	 * @description 实现登入功能 
+	 */
+	public String login()
+	{
+		LOG.error("username:" + user.getUserName());
+		
+		if(user == null)
+		{	
+			LOG.error("USER对象为空！");
+			return ERROR;
+		}
+		if (StringUtils.isBlank(user.getUserName()) || StringUtils.isBlank(user.getPassword())){
+			ServletActionContext.getRequest().setAttribute("loginMsg", "账号或密码未输入！");
+			return ERROR;
+		}
+		try
+		{
+			User tempuser = new User();
+			tempuser = userService.findUser(user.getUserName(),user.getPassword());
+			if(tempuser == null){
+				ServletActionContext.getRequest().setAttribute("loginMsg", "对不起，该用户不存在或密码输入错误！");
+				return ERROR;
+			}else{
+				ServletActionContext.getRequest().setAttribute("loginMsg", "登入成功！");
+				//向页面注册session，以判断用户是谁
+				Map session = (Map) ActionContext.getContext().getSession();
+				session.put("user", tempuser);
+				return SUCCESS;
+			}
+			
+		} catch(Exception e){
+			e.printStackTrace();
+		}
+		LOG.error("开始保存数据");
+		return SUCCESS;
+	}
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+	public IUserService getUserService() {
+		return userService;
+	}
+	public void setUserService(IUserService userService) {
+		this.userService = userService;
+	}
+}

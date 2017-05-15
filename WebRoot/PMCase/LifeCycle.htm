@@ -1,0 +1,130 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./LifeCycle.files/filelist.xml">
+<link rel=Edit-Time-Data href="./LifeCycle.files/editdata.mso">
+<link rel="stylesheet" type="text/css" href="tableStyle.css">
+<link rel="stylesheet" type="text/css" href="textStyle.css">
+
+<title>3</title>
+</head>
+
+<body>
+<h1>
+案例说明-《校务通管理系统》的生存期模型</h1>
+<div class="headline">
+案例说明-《校务通管理系统》的生存期模型</div>
+<div class="context">
+&nbsp;&nbsp;针对本项目的开发特点，参考企业的生存期模型说明和软件过程体系，决定采用增量式模型如下图，理由如下：
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;1．    校务通系统的全部功能分成通用功能和日常业务管理功能两大类，因此可以先基于通用功能作出一个最小的使用版本，再逐步添加其余的功能。这样一来，用户可以先试用最小版本的同时，提出更多明确的需求，这有助于下一阶段的开发，大大减小了开发的风险。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;2．    在校务通系统需求规格中，要求系统有可扩充性。若使用增量模型，可以保证系统的可扩充性。用户明确了需求的大部分，但也存在不很详尽的地方。如：“关于教师档案，比照所提供资料设计，现在也没有一个成形的东西”；资源库系统只提到“应提供一个标准的资源库解决方案。”这样只有等到一个可用的产品出来，通过客户使用，然后进行评估，评估结果作为下一个增量的开发计划，下一个增量发布一些新增的功能和特性。直至产生最终完善的产品。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;3．    “系统要求有可扩充性，可以在现有系统的基础上，通过前台就可加挂其它功能模块”。也说明用户可能会增加新的需求。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;4．    对一个管理方式已经比较成熟的学校，要完全舍弃原有的管理方式，用校务通系统替代全部管理，这是不实际的。所以，可以从最基础的做起，逐步扩充其应用，所以选用增量模型来开发校务通系统。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;5．    本项目具备增量式模型的其他特点
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a)    项目复杂程度为中等。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b)    预计开发软件的成本为中等。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c)    产品和文档的再使用率会很高,
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d)    项目风险较低
+<center>
+<img src="./LifeCycle.files/image007.gif" >
+</center>
+<div class="title1">生存期中的各阶段定义如下：</div>
+<div class="title2">项目规划阶段</div>
+&nbsp;&nbsp;&nbsp;&nbsp;阶段目标：    根据合同和初步的需求分析确定项目的规模、时间计划和资源需求。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;输入：           合同文本,SOW
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;过程：           项目规划，计划确认
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;输出：           项目计划
+<div class="title2">需求分析阶段</div>
+&nbsp;&nbsp;&nbsp;&nbsp;       阶段目标：确定客户的需求
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输入：           项目计划，SOW
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       过程：           需求获取，需求分析，需求控制
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输出：           原型系统，需求规格
+<div class="title2">设计阶段</div>
+&nbsp;&nbsp;&nbsp;&nbsp;       阶段目标：    总体系统结构设计
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输入：           原型系统，需求规格
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;过程：           总体设计
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;输出：           系统设计说明书，数据库结构定义
+<div class="title2">增量 1实现</div>
+&nbsp;&nbsp;&nbsp;&nbsp;阶段目标：    实现系统的通用功能
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输入：           系统设计说明书,数据库结构定义
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       过程：           详细设计,编码，代码走查，代码评审，单元测试
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输出：           详细设计说明书，源代码，可运行版本－1
+<div class="title2">增量 2实现</div>
+&nbsp;&nbsp;&nbsp;&nbsp;阶段目标：    实现系统的招生管理功能
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输入：           系统设计说明书,数据库结构定义
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       过程：           详细设计,编码，代码走查，代码评审，单元测试
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输出：           详细设计说明书，源代码，可运行版本－2
+<div class="title2">增量 3实现</div>
+&nbsp;&nbsp;&nbsp;&nbsp;阶段目标：    实现系统的学生日常管理功能
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输入：           系统设计说明书,数据库结构定义
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       过程：           详细设计,编码，代码走查，代码评审，单元测试
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输出：           详细设计说明书，源代码，可运行版本－3
+<div class="title2">增量 4实现</div>
+&nbsp;&nbsp;&nbsp;&nbsp;阶段目标：    实现系统的教务管理功能
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输入：           系统设计说明书,数据库结构定义
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       过程：           详细设计,编码，代码走查，代码评审，单元测试
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输出：           详细设计说明书，源代码，可运行版本－4
+<div class="title2">增量 5实现</div>
+&nbsp;&nbsp;&nbsp;&nbsp;阶段目标：    实现系统的教师辅助功能
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输入：           系统设计说明书,数据库结构定义
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       过程：           详细设计,编码，代码走查，代码评审，单元测试
+<br/>&nbsp;&nbsp; &nbsp;&nbsp;      输出：           详细设计说明书，源代码，可运行版本－5
+<div class="title2">增量 6实现</div>
+&nbsp;&nbsp;&nbsp;&nbsp;阶段目标：    实现系统的聊天室/论坛功能
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输入：           系统设计说明书,数据库结构定义
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       过程：           详细设计,编码，代码走查，代码评审，单元测试
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输出：           详细设计说明书，源代码，可运行版本－6
+<div class="title2">集成测试</div>
+&nbsp;&nbsp;&nbsp;&nbsp;       阶段目标：    通过集成环境下的软件测试
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输入：           测试计划
+<div class="title2">测试案例</div>
+&nbsp;&nbsp;&nbsp;&nbsp;       过程：           集成测试，系统测试
+<br/>&nbsp;&nbsp; &nbsp;&nbsp;      输出：           系统软件包,测试报告，产品说明书
+<div class="title2">产品提交</div>
+&nbsp;&nbsp; &nbsp;&nbsp;      阶段目标：    产品可投入使用
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;       输入：           系统软件包
+<br/>&nbsp;&nbsp; &nbsp;&nbsp;      过程：           产品提交
+<br/>&nbsp;&nbsp; &nbsp;&nbsp;      输出：           验收报告
+<br/>&nbsp;&nbsp;注：生存期模型中的过程定义可以参照企业的质量保证体系并结合项目的具体特点而决定，由于公司的流程已覆盖到了项目开发、管理的所有方面，包括从最开始的合同到最后软件的产品提交，都有相应的过程规定，基本上已形成一种工业化的软件开发，所以，为形成一个良好的软件开发环境奠定了基础。
+<br/>&nbsp;&nbsp;例如系统设计过程及产品标准的定义如下：
+<br/>&nbsp;&nbsp;参与角色
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;R1：项目经理
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;R2：开发经理
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;R3：设计人员
+<br/>&nbsp;&nbsp;进入条件
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;E1：项目计划规定的系统设计时间到
+<br/>&nbsp;&nbsp;输入
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;I1：需求规格
+<br/>&nbsp;&nbsp;活动
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;A1：设计人员了解业务需求并仔细阅读需求规格
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;A2：设计人员收集了解同类项目的技术框架；
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;A3：开发经理领导设计人员通过具体的业务分析和企业成熟的技术框架进行系统设计；
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;A4：设计人员在进行系统设计时，应按照系统设计的标准模板进行，要求如下
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;         完整，正确，如实地说明每个模块的流程和数据库表；
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;         用中文进行描述，并用小四号字体
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;A5：开发经理负责监督设计人员设计文档的对等评审；
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;A6：开发经理主持设计正式评审，同时要求项目经理和质量经理参加
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;A7：设计人员根据评审结果进行修订和补充，并形成最终系统设计文档。
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;A8：开发经理负责将系统设计过程中无法解决的问题以事件报告形式提交给项目经理，由项目管理者进行跟踪解决；
+<br/>&nbsp;&nbsp;输出
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;O1：系统设计文档（格式标准见企业质量体系）
+<br/>&nbsp;&nbsp;完成标志
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;     F1：系统设计评审通过，纳入配置库
+</div>
+
+			<div class="content" style="margin-bottom: 50px">
+				<br />
+				<p align="right">
+					版权所有&nbsp;©&nbsp;北京邮电大学&nbsp;&nbsp;地址:北京市西土城路10号&nbsp;&nbsp;邮编:100876
+				</p>
+			</div>
+</body>
+
+</html>

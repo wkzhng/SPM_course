@@ -1,0 +1,121 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="/struts-tags" prefix="s"%>
+<%-- <%@ include file="dbConfig.jsp"%> --%>
+<%-- <%@ page import="com.bupt.spm.dao.DBSupportDao"%> --%>
+<%-- <%@ page import="vo.User"%> --%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>"教育部-IBM精品课程建设项目"软件项目管理课程</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="./css/style.css"
+	rel="stylesheet" type="text/css" />
+<link href="<%=request.getContextPath()%>/css/float.css"
+	rel="stylesheet" type="text/css" />
+<link href="<%=request.getContextPath()%>/css/spm.css" rel="stylesheet"
+	type="text/css" />	
+<link
+	href="<%=request.getContextPath()%>/thirdParty/videoJs/video-js.css"
+	rel="stylesheet" type="text/css" />
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/js/script.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/js/cufon-yui.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/js/arial.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/js/cuf_run.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/js/float.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/thirdParty/videoJs/video.js"></script>
+
+
+<!-- CuFon ends -->
+</head>
+<body>
+
+<%-- 	<s:if test="#session.user==null"> --%>
+<!-- 		<a href="../SPM.jsp" target="123"> -->
+<!-- 			<div class="headlink"> -->
+<!-- 				点此登录>> -->
+<!-- 			</div> -->
+<!-- 		</a> -->
+<%-- 	</s:if> --%>
+	<s:else>
+	<label>asdasd</label>
+	<div class="main">
+		<div class="main_resize">
+			<div class="content">
+				<div class="content_bg">
+					<div class="mainbar">
+						<div class="article">
+							<div class="clr"></div>
+							adsasd
+							<table width="700" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+									<tr>
+										<td width="100%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font
+											size="5"><center>在线学习(进度 
+											
+											
+											<%=17%>%)</center></font><br />
+										<br />
+
+											<table width="100%" align="right" cellpadding="1" border="0">
+												<tbody>
+													<tr>
+														<td>
+															<ul class="vdlist">
+																<li><a class="video"
+																	href="video_show.jsp">
+																		<img
+																		src="../image/image1.jpg" />
+																</a>
+																	<p>
+																		<span>共5分钟 
+																		</span>共5集&nbsp;&nbsp;&nbsp;&nbsp;本章进度：34%
+																	</p>
+																	<p>
+																		<a class="video"
+																			href="video_show.jsp">
+																			第8章&nbsp;&nbsp;
+																		</a>
+																	</p>
+																</li>
+
+															</ul>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="clr"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</s:else>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

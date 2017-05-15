@@ -1,0 +1,96 @@
+package com.buptsse.spm.domain;
+
+import java.io.Serializable;
+/**
+ * @author xinyu han
+ * @date 2015年11月01日 下午2:34
+ * @description	Course表的信息记录
+ * @modify
+ * @modifyDate 
+ */
+public class Course implements Serializable{
+	private static final long serialVersionUID = 1L;
+		private String studentId;
+		private String name;
+		private String classId;
+		private String email;
+		private String telno;
+		private String status;
+		private int dailyGrade;
+		private int midGrade;
+		private int finalGrade;
+		private int practiceGrade;
+		private int totalGrade;
+		public String getStudentId() {
+			return studentId;
+		}
+		public void setStudentId(String studentId) {
+			this.studentId = studentId;
+		}
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			this.name = name;
+		}
+		public String getClassId() {
+			return classId;
+		}
+		public void setClassId(String classId) {
+			this.classId = classId;
+		}
+		public String getEmail() {
+			return email;
+		}
+		public void setEmail(String email) {
+			this.email = email;
+		}
+		public String getTelno() {
+			return telno;
+		}
+		public void setTelno(String telno) {
+			this.telno = telno;
+		}
+		public String getStatus() {
+			return status;
+		}
+		public void setStatus(String status) {
+			this.status = status;
+		}
+		public int getDailyGrade() {
+			return dailyGrade;
+		}
+		public void setDailyGrade(int dailyGrade) {
+			this.dailyGrade = dailyGrade;
+		}
+		public int getMidGrade() {
+			return midGrade;
+		}
+		public void setMidGrade(int midGrade) {
+			this.midGrade = midGrade;
+		}
+		public int getFinalGrade() {
+			return finalGrade;
+		}
+		public void setFinalGrade(int finalGrade) {
+			this.finalGrade = finalGrade;
+		}
+		public int getPracticeGrade() {
+			return practiceGrade;
+		}
+		public void setPracticeGrade(int practiceGrade) {
+			this.practiceGrade = practiceGrade;
+		}
+		public int getTotalGrade() {
+			return totalGrade;
+		}
+		public void setTotalGrade(int totalGrade) {
+			this.totalGrade = totalGrade;
+		}
+		public static long getSerialversionuid() {
+			return serialVersionUID;
+		}
+		
+		
+		
+}
