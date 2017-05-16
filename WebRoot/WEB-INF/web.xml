@@ -38,7 +38,18 @@
 		<filter-name>SessionFilter</filter-name>
 		<url-pattern>/listSpChapter.do</url-pattern>
 	</filter-mapping>	
- 
+	<filter-mapping>
+		<filter-name>SessionFilter</filter-name>
+		<url-pattern>/listDownLoad.do</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>SessionFilter</filter-name>
+		<url-pattern>/jsp/download/*</url-pattern>
+	</filter-mapping>	
+	<filter-mapping>
+		<filter-name>SessionFilter</filter-name>
+		<url-pattern>/jsp/message/*</url-pattern>
+	</filter-mapping>	
   
   
   

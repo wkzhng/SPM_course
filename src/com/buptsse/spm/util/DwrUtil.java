@@ -52,6 +52,22 @@ public class DwrUtil {
 		}
 	}
 	
+	
+	/**
+	 * 
+	 * @param email 邮箱地址
+	 * @return 判定地址是否符合要求，是返回true，否则false
+	 */
+	public Boolean isEmailAddress(String email){
+		Pattern pattern = Pattern.compile("([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+");
+		Matcher isEmail = pattern.matcher(email);
+		if(isEmail.matches()){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
 	/**
 	 * 
 	 * @param userName 用户名
@@ -114,12 +130,36 @@ public class DwrUtil {
 	
 	/**
 	 * 
+	 * @param email 邮箱地址
+	 * @return String 检测邮箱地址输入是否符合规范
+	 */
+	public String emailCheck(String email){
+		System.out.println("开始检验邮箱是否规范");
+		try{
+			if(StringUtils.isBlank(email) ){
+				System.out.println("邮箱不可为空");
+				return "邮箱不可为空";
+			}else if(!isEmailAddress(email)){
+				System.out.println("邮箱地址不符合规范");
+				return "邮箱地址不符合规范";
+			}else{
+				return "OK";
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return "success";
+	}
+	
+	/**
+	 * 
 	 * @param registerUserName 用户名
 	 * @param registerPassWord 密码
 	 * @param registerPassWord1 确认密码
 	 * @return String 检测注册输入是否有效，返回相应字符串
 	 */
-	public String registerCheck(String registerUserName, String registerPassWord, String registerPassWord1){
+	public String registerCheck(String registerUserName, String registerPassWord, String registerPassWord1, 
+			String email){
 		
 		if (StringUtils.isBlank(registerUserName) || StringUtils.isBlank(registerPassWord) || StringUtils.isBlank(registerPassWord1)){
 			System.out.println("用户名或密码为空！");
@@ -130,6 +170,9 @@ public class DwrUtil {
 			try {
 				if (isPassword(registerPassWord).equals("no")) {
 					System.out.println("密码格式错误");
+					return "error";
+				}else if(!isEmailAddress(email)){
+					System.out.println("邮箱不符合规范");
 					return "error";
 				}else if(registerPassWord.equals(registerPassWord1)){
 					System.out.println("两次密码输入相同");

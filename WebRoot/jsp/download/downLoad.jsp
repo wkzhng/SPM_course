@@ -38,6 +38,7 @@
   </script> 
   
 	<body>
+	 	<c:if test="${session.user.position=='2' || session.user.position=='3'}">
 		<div class="article">
 		<h1>下载区
 		</h1>
@@ -91,6 +92,6 @@
 				</div>
 			</div>
 		</div>
-
+		</c:if>
 	</body>
 </html>

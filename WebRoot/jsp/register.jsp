@@ -24,7 +24,7 @@
 			var registerPassWord = document.getElementById("passwd");
 			var registerPassWord1 = document.getElementById("passwd2");
 			var registerEmail = document.getElementById("email");
-			dwrUtil.registerCheck(registerUserName.value,registerPassWord.value,registerPassWord1.value,callback);
+			dwrUtil.registerCheck(registerUserName.value,registerPassWord.value,registerPassWord1.value,registerEmail.value,callback);
 			function callback(result){
 				if(result == "success"){
 					//$.messager.alert("提示信息","注册成功！");
@@ -122,6 +122,18 @@
 				passwordMsg1.style.display="block";
 			}else{
 				passwordMsg1.style.display="none";
+			}
+		}
+		
+		function emailCheck(){
+			var email = document.getElementById("email").value;
+			dwrUtil.emailCheck(email,callback);
+			function callback(result){
+				if(result == "OK"){
+					document.getElementById('EmailMsg').style.display="none";
+				}else{
+					document.getElementById('EmailMsg').style.display="block";
+				}
 			}
 		}
 			
@@ -295,7 +307,7 @@
 							<div class="Email" id="EmailMsg" style="display:none;color:#F00">
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								<label id="labelEmailMsg1" class="text" for="pm">
-									邮箱已存在！
+									邮箱不符合规范！
 								</label>
 							</div>
 							
