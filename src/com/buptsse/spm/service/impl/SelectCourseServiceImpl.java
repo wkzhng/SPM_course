@@ -101,7 +101,7 @@ public class SelectCourseServiceImpl implements ISelectCourseService{
 		while (iter.hasNext()){
 			String key = (String) iter.next();
 			String value = (String) param.get(key);
-			System.out.println("&&&&&value&&&&:"+value);
+			System.out.println(key+":"+value);
 			if(!"".equals(value)){
 				hql+="and "+key+"=? ";
 				paramList.add(value);				
@@ -156,6 +156,16 @@ public class SelectCourseServiceImpl implements ISelectCourseService{
 		// TODO Auto-generated method stub
 		
 		return false;
+	}
+	
+	@Override
+	public boolean changeSchedule(String studentId, int newSchedule) {
+		// TODO Auto-generated method stub
+		Course course = new Course();
+		course = iSelectCourseDao.findCourse(studentId);
+		course.setSchedule(String.valueOf(newSchedule));
+		iSelectCourseDao.updateCourse(course);
+		return true;
 	}
 
 	@Override

@@ -19,6 +19,13 @@
 		<script type="text/javascript" src="./dwr/engine.js"></script>
 		<script type="text/javascript" src="./dwr/interface/dwrUtil.js"></script>
 		<script type="text/javascript">
+		
+		function init(){
+			if('<%=session.getAttribute("user")%>' != 'null'){
+				window.location.href='${ctx}/jsp/mainFrame.jsp';
+			}
+		}
+		
 		function register(position){
 			var registerUserName = document.getElementById("user");
 			var registerPassWord = document.getElementById("passwd");
@@ -140,7 +147,7 @@
 		</script>
 		<link href="./css/login2.css" rel="stylesheet" type="text/css" />
 	</head>
-	<body>
+	<body onload="init()">
 		<h1>
 			北邮爱课堂系统
 			<sup>

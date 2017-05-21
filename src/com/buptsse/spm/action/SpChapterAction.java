@@ -61,6 +61,8 @@ public class SpChapterAction extends ActionSupport{
 	public int totalSchedule;//总学习进度
 	
 	public List chapterScheduleList =  new ArrayList(); ;//章节进度
+	
+	public String id;
 
 
 
@@ -71,8 +73,15 @@ public class SpChapterAction extends ActionSupport{
 	 */
 	public String findSpChapterList() throws Exception{
 		
-		
+		boolean isSearch = true;
 		User user = (User)ServletActionContext.getRequest().getSession().getAttribute("user");
+		System.out.println(id);
+		
+		if(id == null){
+			isSearch = false;
+			id = user.getUserId();
+		}
+		
 		spChapterList = spChapterService.findSpChapterDetial();
 		
 		int averageTotal=0;
@@ -83,22 +92,27 @@ public class SpChapterAction extends ActionSupport{
 			
 			int sumValueTotal=0;
 			int k=0;
-			List<Schedule> scheduleListtmp = scheduleService.findScheduleByUserIdAndChapterId(Integer.parseInt(spchapter[0].toString()), user.getUserId());
+			List<Schedule> scheduleListtmp = scheduleService.findScheduleByUserIdAndChapterId(Integer.parseInt(spchapter[0].toString()), id);
 			for(Schedule schedule:scheduleListtmp){
 				sumValueTotal+=schedule.getPercent();
 				k++;
 			}
-			averageTotal+=sumValueTotal/k;
+			if(k != 0){
+				averageTotal+=sumValueTotal/k;
 			//存入章节进度
-			chapterScheduleList.add(sumValueTotal/k);
+				chapterScheduleList.add(sumValueTotal/k);
+			}else{
+				chapterScheduleList.add(0);
+			}
 		}
 		
 		//总进度赋值
 		totalSchedule = averageTotal/17;
 		
-		
-		
-		return "success";
+		if(isSearch == true)
+			return "success2";
+		else
+			return "success";
 	}	
 	
 	
@@ -243,7 +257,13 @@ public class SpChapterAction extends ActionSupport{
 		this.spChapterList = spChapterList;
 	}
 
+	public String getId() {
+		return id;
+	}
 	
+	public void setId(String id) {
+		this.id = id;
+	}
 	
 	
 }

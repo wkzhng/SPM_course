@@ -62,6 +62,13 @@
 			<result name="success"></result>
 			<result name="error">jsp/error.jsp</result>
 		</action>	
+		
+		<!-- 查询课程进度 -->
+		<action name="courseSchedule" method="listSchedule" class="courseAction">
+			<result name="success"></result>
+			<result name="error">jsp/error.jsp</result>
+		</action>	
+		
 		<!-- 修改课程信息 -->		
 		<action name="courseUpdate" method="updateCourse" class="courseAction">
 			<result name="success"></result>
@@ -263,6 +270,7 @@
 		<!-- 教学视频-->
 		<action name="listSpChapter" method="findSpChapterList" class="spChapterAction">
 			<result name="success">/jsp/video/video.jsp</result>
+			<result name="success2">/jsp/video/videoSchedule.jsp</result>
 			<result name="error">error/error.jsp</result>	
 		</action>	
 				

@@ -7,6 +7,10 @@ import javax.annotation.Resource;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.struts2.ServletActionContext;
+
+import com.buptsse.spm.domain.Course;
+import com.buptsse.spm.domain.User;
+import com.buptsse.spm.service.ISelectCourseService;
 import com.buptsse.spm.service.IUserService;
 
 /**
@@ -21,6 +25,8 @@ public class DwrUtil {
 
 	@Resource
 	private IUserService userService;
+	@Resource
+	private ISelectCourseService selectCourseService;
 	
 	/**
 	 * 
@@ -189,4 +195,19 @@ public class DwrUtil {
 		return "error";
 	}
 	
+	/**
+	 * 
+	 * @return String 检测是否选课，返回相应字符串
+	 */
+	public String courseCheck(){
+		User user = (User)ServletActionContext.getRequest().getSession().getAttribute("user");
+		Course course = selectCourseService.findCourse(user.getUserId());
+		if(course == null){
+			return "false";
+		}
+		if(!course.getStatus().equals("2")){
+			return "false";
+		}else
+			return "success";
+	}
 }

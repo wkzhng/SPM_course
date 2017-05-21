@@ -28,6 +28,8 @@
 		<property name="totalGrade" column="totalGrade" length="11"
 			type="big_decimal" />
 		<property name="syear" column="syear" length="4"
+			type="string" />	
+		<property name="schedule" column="schedule" length="3"
 			type="string" />			
 	</class>
 </hibernate-mapping>

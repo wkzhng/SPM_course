@@ -16,11 +16,25 @@
 		</style>		
 		
 	</head>
-	<body>
-	<script>
-
+	<script type="text/javascript" src="./dwr/util.js"></script>
+	<script type="text/javascript" src="./dwr/engine.js"></script>
+	<script type="text/javascript" src="./dwr/interface/dwrUtil.js"></script>
+	<script type="text/javascript">
+		function judge(){
+			dwrUtil.courseCheck(callback);
+			function callback(result){
+				if(result!="success"){
+					document.getElementById('main').style.display="none";
+					document.getElementById('info').style.display="block";
+				}
+			}
+		}
 	</script>
-		<div class="article">
+	<body onload="judge()">
+		<h2 id="info" style="display:none;font-size: 28px;color: #00a1f1;border-bottom: 1px solid #b6d9e8;line-height: 50px;word-break:break-all;">
+			请先进行选课并通过确认	
+   		</h2> 
+		<div id="main" class="article">
 			<h1><center>我的学习进度：(进度${totalSchedule}%)</center></h1>
 			<input id="inputid" type="hidden">
 			<h2>

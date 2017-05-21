@@ -16,8 +16,10 @@ import org.slf4j.LoggerFactory;
 import com.alibaba.fastjson.JSONObject;
 import com.buptsse.spm.domain.Code;
 import com.buptsse.spm.domain.Course;
+import com.buptsse.spm.domain.Schedule;
 import com.buptsse.spm.domain.User;
 import com.buptsse.spm.service.ICodeService;
+import com.buptsse.spm.service.IScheduleService;
 import com.buptsse.spm.service.ISelectCourseService;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
@@ -49,6 +51,9 @@ public class CourseAction extends ActionSupport{
 	
 	@Resource
 	private ICodeService codeService;
+	
+	@Resource
+	private IScheduleService scheduleService;
 	
 	 /** 
 	  * 分页查询所有课程列表
@@ -92,7 +97,41 @@ public class CourseAction extends ActionSupport{
 		return null;
 	}
 	
-	
+	 /** 
+	  * 分页查询所有课程进度
+	 * @return
+	 */
+	public String listSchedule(){
+		
+		
+		int page=Integer.parseInt(ServletActionContext.getRequest().getParameter("page"));
+		int rows=Integer.parseInt(ServletActionContext.getRequest().getParameter("rows"));
+			
+		Map paramMap = new HashMap();
+		paramMap.put("studentId", stdId);
+		paramMap.put("classId", classId);
+		paramMap.put("name", name);
+		paramMap.put("status", "2");
+		paramMap.put("syear", syear);
+		
+		List<Course> list = selectCourseService.findPage(paramMap,page, rows);
+
+		//查询总条数
+		Long total = selectCourseService.count(paramMap);
+		
+		Map<String, Object> map=new HashMap<String, Object>();
+		map.put("rows", list);
+		map.put("total", total);
+		String str=JSONObject.toJSONString(map);
+		try {
+			ServletActionContext.getResponse().getWriter().write(str);
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
 
 	
 	
@@ -108,6 +147,52 @@ public class CourseAction extends ActionSupport{
 			if("U".equals(operateType)){
 				//将未确认的确认
 				result = selectCourseService.changeStatus(studentIds[i], 2);
+				
+				//章节初始化写死
+				for(int j = 1; j <= 103; j++){
+					Schedule schedule = new Schedule();
+				    schedule.setPercent(0);
+				    schedule.setUserid(studentIds[i]);
+				    schedule.setVideo_step_order(j);
+				    int chapterId = 0;
+				    if(j >= 1 && j <= 6)
+				    	chapterId = 1;
+				    else if(j >= 7 && j <= 11)
+				    	chapterId = 2;
+				    else if(j >= 12 && j <= 21)
+				    	chapterId = 3;
+				    else if(j >= 22 && j <= 29)
+				    	chapterId = 4;
+				    else if(j >= 30 && j <= 34)
+				    	chapterId = 5;
+				    else if(j >= 35 && j <= 46)
+				    	chapterId = 6;
+				    else if(j >= 47 && j <= 61)
+				    	chapterId = 7;
+				    else if(j >= 62 && j <= 66)
+				    	chapterId = 8;
+				    else if(j >= 67 && j <= 71)
+				    	chapterId = 9;
+				    else if(j >= 72 && j <= 76)
+				    	chapterId = 10;
+				    else if(j >= 77 && j <= 82)
+				    	chapterId = 11;
+				    else if(j >= 83 && j <= 84)
+				    	chapterId = 12;
+				    else if(j >= 85 && j <= 85)
+				    	chapterId = 13;
+				    else if(j >= 86 && j <= 86)
+				    	chapterId = 14;
+				    else if(j >= 87 && j <= 93)
+				    	chapterId = 15;
+				    else if(j >= 94 && j <= 100)
+				    	chapterId = 16;
+				    else if(j >= 101 && j <= 103)
+				    	chapterId = 17;
+				    schedule.setChapter_id(chapterId);			      
+				    scheduleService.saveOrUpdate(schedule);
+				}
+				
 				if(result){
 					str = "确认成功！";
 				}else{
@@ -166,6 +251,7 @@ public class CourseAction extends ActionSupport{
 			course.setStatus("1");
 			boolean flag=false;
 			try{
+				course.setSchedule("0");
 				flag = selectCourseService.insertCourse(course);
 			}catch(Exception e){
 				e.printStackTrace();
@@ -268,5 +354,12 @@ public class CourseAction extends ActionSupport{
 	public void setCodeService(ICodeService codeService) {
 		this.codeService = codeService;
 	}
-		
+	
+	public IScheduleService getScheduleService() {
+		return scheduleService;
+	}
+	
+	public void setScheduleService(IScheduleService scheduleService) {
+		this.scheduleService = scheduleService;
+	}
 }

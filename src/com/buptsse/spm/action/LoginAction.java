@@ -39,10 +39,13 @@ public class LoginAction extends ActionSupport
 		
 		try
 		{
+			Map session = (Map) ActionContext.getContext().getSession();
+			
 			User tempuser = new User();
 			tempuser = userService.findUser(user.getUserName(),user.getPassword());
 			
-			Map session = (Map) ActionContext.getContext().getSession();
+			
+			
 			session.put("user", tempuser);
 			return SUCCESS;			
 
@@ -60,6 +63,7 @@ public class LoginAction extends ActionSupport
 		try
 		{
 			Map session = (Map) ActionContext.getContext().getSession();
+			ActionContext.getContext().getSession().clear();
 			session.clear();
 			return "success";			
 		} catch(Exception e){

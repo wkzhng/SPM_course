@@ -64,7 +64,12 @@
 						<a href="${ctx}/listTeachingPlan.do" target="right">&nbsp;&nbsp;&nbsp;&nbsp;授课教案</a>
 					</dd>
 					<dd>
+					 	<c:if test="${session.user.position=='3'}">
 							<a href="${ctx}/listSpChapter.do" target="right">&nbsp;&nbsp;&nbsp;&nbsp;教学视频</a>
+						</c:if>
+					 	<c:if test="${session.user.position!='3'}">
+							<a href="${ctx}/jsp/video/videoQuery.jsp" target="right">&nbsp;&nbsp;&nbsp;&nbsp;教学视频</a>
+						</c:if>
 					</dd>
 					<dd>
 						<a href="${ctx}/jsp/exercise/mainView.jsp" target="hehe">&nbsp;&nbsp;&nbsp;&nbsp;练习题</a>

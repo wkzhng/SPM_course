@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 /**
  * @author BUPT-TC
- * @date 2015年11月01日 下午2:34
- * @description	Course表的信息记录
+ * @date 2015骞�11鏈�01鏃� 涓嬪崍2:34
+ * @description	Course琛ㄧ殑淇℃伅璁板綍
  * @modify BUPT-TC
  * @modifyDate 
  */
@@ -23,6 +23,15 @@ public class Course implements Serializable{
 		private BigDecimal practiceGrade= new BigDecimal(0.00);
 		private BigDecimal totalGrade= new BigDecimal(0.00);
 		private String syear;		
+		private String schedule;
+		
+		public String getSchedule() {
+			return schedule;
+		}
+		
+		public void setSchedule(String schedule) {
+			this.schedule = schedule;
+		}
 		
 		public String getSyear() {
 			return syear;

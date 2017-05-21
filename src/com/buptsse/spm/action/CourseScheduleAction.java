@@ -15,6 +15,7 @@ import com.buptsse.spm.domain.Schedule;
 import com.buptsse.spm.domain.SpChapterVideo;
 import com.buptsse.spm.domain.User;
 import com.buptsse.spm.service.IScheduleService;
+import com.buptsse.spm.service.ISelectCourseService;
 import com.buptsse.spm.service.ISpChapterVideoService;
 import com.buptsse.spm.service.IUserService;
 
@@ -38,6 +39,8 @@ public class CourseScheduleAction extends ActionSupport{
 	private ISpChapterVideoService spChapterVideoService;
 	@Resource
 	private IUserService userService;	
+	@Resource
+	private ISelectCourseService selectCourseService;
 	
 	public List scheduleList = new ArrayList();
 	
@@ -150,8 +153,22 @@ public class CourseScheduleAction extends ActionSupport{
 			userService.updateUser(user);
 		
 			//更新session中的数据
-			ServletActionContext.getRequest().getSession().setAttribute("user", user);	        
+			ServletActionContext.getRequest().getSession().setAttribute("user", user);	
 			
+			//更新总进度
+			int averageTotal = 0;
+			for(int j = 1; j <= 103; j++){
+				List<Schedule> scheduleListtmp = scheduleService.findScheduleByUserIdAndStepOrder(j, user.getUserId());
+				int sumValueTotal = 0;
+				int k = 0;
+				for(Schedule scheduletmp:scheduleListtmp){
+					sumValueTotal+=scheduletmp.getPercent();
+					k++;
+				}
+				averageTotal+=sumValueTotal/k;
+			}
+			int totalSchedule = averageTotal/103;
+			selectCourseService.changeSchedule(user.getUserId(), totalSchedule);
 		}		
 		
 		return null;
@@ -222,6 +239,12 @@ public class CourseScheduleAction extends ActionSupport{
 		this.userService = userService;
 	}
 
+	public ISelectCourseService getSelectCourseService() {
+		return selectCourseService;
+	}
 	
+	public void setSelectCourseService(ISelectCourseService selectCourseService) {
+		this.selectCourseService = selectCourseService;
+	}
 	
 }
