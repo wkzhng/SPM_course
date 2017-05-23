@@ -140,20 +140,24 @@ public class RegisterAction extends ActionSupport {
 		
 		for (int i = 0; i < ids.length; i++) { 
 			//将已确认的删除
-			try {
-				result = userService.deleteUser(ids[i]);
-			} catch (Exception e) {
-				// TODO: handle exception
-				e.printStackTrace();
-				result = false;
+			if(userService.findUser(ids[i]).getPosition().equals("1")){
+				str += i + ":不能删除管理员！\n";
 			}
-			
-			if(result){
-				str = "删除成功！";
-			}else{
-				str = "删除失败，请联系管理员！";
+			else{
+				try {
+					result = userService.deleteUser(ids[i]);
+				} catch (Exception e) {
+					// TODO: handle exception
+					e.printStackTrace();
+					result = false;
+				}
+				
+				if(result){
+					str = i + ":删除成功！\n";
+				}else{
+					str = i + ":删除失败，请联系管理员！\n";
+				}
 			}
-
 		}
 
 		String message = JSONObject.toJSONString(str);

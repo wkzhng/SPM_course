@@ -233,7 +233,7 @@
  	<form id="fileUpload" method="post" enctype="multipart/form-data">
 	  <table style="border-collapse:collapse ;"  width="600px" height="50px" cellspacing="5" cellpadding="5"> 
 	 	<tr>
-		 	<td  width="150px" align="right"  ><label for="fileName" >成绩文件选择:</label> </td>
+		 	<td  width="150px" align="right"  ><label for="fileName" >人员文件选择:</label> </td>
 		 	<td   width="200px" align="left" ><input class="easyui-filebox"  id="file" name="file" buttonText="选择文件"  accept=".xlsx,.xls" style="width:300px; height: 26px"> </td>
 		 	<td width="100px"   align="left" ><a href="javascript:void(0)" class="easyui-linkbutton" onclick="uploadFile()" style="width: 100px">上  传</a> </td>
 	 	</tr>
