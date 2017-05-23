@@ -38,10 +38,14 @@
   </script> 
   
 	<body>
+	<h1 style="font-size: 28px;color: #00a1f1;border-bottom: 1px solid #b6d9e8;line-height: 50px;word-break:break-all;">
+	下载区
+		</h1>
+	 <c:if test="${session.user.position=='1' }">
+ 	您作为管理员，无该功能权限！
+ </c:if> 
 	 	<c:if test="${session.user.position=='2' || session.user.position=='3'}">
 		<div class="article">
-		<h1>下载区
-		</h1>
 			<div class="content">			
 				<s:iterator value="downLoadList" status="status"  var="downLoad" >
 					

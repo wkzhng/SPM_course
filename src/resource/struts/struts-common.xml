@@ -91,6 +91,12 @@
 			<result name="success"></result>
 			<result name="error">error/error.jsp</result>
 		</action>	
+		
+		<!-- 上传人员名单 -->
+		<action name="uploadPersonFile" method="uploadPersonFile" class="uploadAction">
+			<result name="success"></result>
+			<result name="error">error/error.jsp</result>
+		</action>	
 			
 			
 	    <!-- 留言板 -->

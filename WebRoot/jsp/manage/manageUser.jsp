@@ -93,6 +93,34 @@
  	
 	 } 
  
+	
+	 function uploadScore(){
+		 	
+		 	$('#dlg2').dialog('open').dialog('setTitle','成绩上传');
+		 
+		 }
+	 
+	 function uploadFile(){
+		 	
+		 	var fileName = $('#file').filebox('getValue');
+		 	var prefix = fileName.substring(fileName.lastIndexOf(".")+1);
+		 	if(prefix=="xlsx"||prefix=="xls"){
+		 	
+			 	$('#fileUpload').form('submit',{
+					 url: "${ctx}/uploadPersonFile.do", 	
+			         success: function(result){
+			          $.messager.alert("提示",result);
+			          $('#fileUpload').form('clear');
+			        }	
+			 	}); 	
+		 	
+		 	}else{
+		 		$.messager.alert("提示信息","您上传的文件格式为："+prefix+"，请上传文件格式为xls或xlsx的文件");
+		 	
+		 	}
+		 }
+	 
+	
  
   </script>
   
@@ -128,7 +156,7 @@
  	        <input type="button" class="btn btn-default" style="margin-right:20px;" onclick="query()" value="查  询" />
  	        <input type="button" class="btn btn-default" style="margin-right:20px;" onclick="clearForm()" value="重  置" />   
 			<input type="button" class="btn btn-default" style="margin-right:20px;" onclick="addUser()" value="添  加" /> 
-	   
+	   		<input type="button" class="btn btn-default" style="margin-right:20px;" onclick="uploadScore()" value="导入信息" /> 
 	    </div>
  
 </form> 
@@ -154,13 +182,14 @@
             </tr>
         </thead>
     </table>  
+   
         <div id="toolbar">
         <c:if test="${session.user.position!='3' }">
 	        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-no" plain="true" onclick="deleteUser(1)">批量删除</a>
     	</c:if>
     	</div>
-  <div>
-  
+  </div>
+ 
   
  
      <div id="dlg" class="easyui-dialog"  style="padding:10px 30px"
@@ -197,11 +226,24 @@
 				<!--  <input type="submit" class="btn btn-default" style="margin-right:20px;" value="添加" />-->
 			</s:form>
     </div>
-    <div id="dlg-buttons">
-        <a href="javascript:void(0)" class="easyui-linkbutton c6" iconCls="icon-ok" onclick="saveUser()" style="width:90px">确认</a>
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')" style="width:90px">取消</a>
-    </div>	 
-  
+    </div>
+
+   
+    <div id="dlg2" class="easyui-dialog"  style="padding:10px 20px;width: 700px" closed="true" buttons="#dlg-buttons" >   
+ 	<form id="fileUpload" method="post" enctype="multipart/form-data">
+	  <table style="border-collapse:collapse ;"  width="600px" height="50px" cellspacing="5" cellpadding="5"> 
+	 	<tr>
+		 	<td  width="150px" align="right"  ><label for="fileName" >成绩文件选择:</label> </td>
+		 	<td   width="200px" align="left" ><input class="easyui-filebox"  id="file" name="file" buttonText="选择文件"  accept=".xlsx,.xls" style="width:300px; height: 26px"> </td>
+		 	<td width="100px"   align="left" ><a href="javascript:void(0)" class="easyui-linkbutton" onclick="uploadFile()" style="width: 100px">上  传</a> </td>
+	 	</tr>
+	  </table>
+ </form>  
+</div>
+<div id="dlg-buttons" align="center">
+      <a href="javascript:void(0)"   class="easyui-linkbutton"  iconCls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')" style="width:90px">关 闭</a>
+</div>  
+
   
   </body>
 </html>

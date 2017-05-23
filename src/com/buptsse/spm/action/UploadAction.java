@@ -32,7 +32,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.struts2.ServletActionContext;
 
 import com.buptsse.spm.domain.Course;
+import com.buptsse.spm.domain.User;
 import com.buptsse.spm.service.ISelectCourseService;
+import com.buptsse.spm.service.IUserService;
 import com.opensymphony.xwork2.ActionSupport;
 
 
@@ -57,7 +59,8 @@ public class UploadAction extends ActionSupport{
 
 	@Resource
 	private ISelectCourseService selectCourseService;	
-	
+	@Resource
+	private IUserService userService;
 
 
 	/**
@@ -134,12 +137,20 @@ public class UploadAction extends ActionSupport{
 			int rowNum=scoreList.length;
 			if(rowNum>0){
 				for(int i=0;i<rowNum;++i){	
+					msg+=String.valueOf(i + 1) + ":";
 					Course course = new Course();
-					course.setStudentId(scoreList[i][1]);
+					int index = scoreList[i][1].lastIndexOf(".00");
+					if(index>-1){
+						//对于学号需要特殊处理	
+						course.setStudentId(scoreList[i][1].substring(0,index));
+					}else{
+						course.setStudentId(scoreList[i][1]);
+					}
 					course.setSyear(scoreList[i][2].substring(0,4));//对于年份需要特殊处理
 					course.setName(scoreList[i][3]);
+					System.out.println(course.getName());
 					//course.setClassId(scoreList[i][4]);
-					int index = scoreList[i][4].lastIndexOf(".00");
+					index = scoreList[i][4].lastIndexOf(".00");
 					if(index>-1){
 						//对于班级需要特殊处理	
 						course.setClassId(scoreList[i][4].substring(0,index));
@@ -162,11 +173,24 @@ public class UploadAction extends ActionSupport{
 					course.setTotalGrade(total.setScale(2,BigDecimal.ROUND_HALF_UP));
 
 					if("".equals(course.getStudentId())){
-						msg = "成绩上传失败，表格中学生学号不能为空！";	
+						msg += "成绩上传失败，表格中学生学号不能为空！\r\n";	
 						break;
-					}else{
+					}else if(userService.findUser(course.getStudentId()) == null){
+						msg += "成绩上传失败，表格中学号为"+course.getStudentId()+"的学生不存在！\r\n";	
+					}
+					else if(!userService.findUser(course.getStudentId()).getPosition().equals("3")){
+						msg += "成绩上传失败，表格中学号为"+course.getStudentId()+"的学生不存在！\r\n";	
+					}
+					else if(selectCourseService.findCourse(course.getStudentId()) == null){
+						msg += "成绩上传失败，表格中学号为"+course.getStudentId()+"的学生没有选课！\r\n";	
+					}
+					else if(!selectCourseService.findCourse(course.getStudentId()).getStatus().equals("2")){
+						msg += "成绩上传失败，表格中学号为"+course.getStudentId()+"的学生没有选课！\r\n";	
+					}
+					else{
+						course.setSchedule(selectCourseService.findCourse(course.getStudentId()).getSchedule());
 						selectCourseService.saveOrUpdate(course);
-						msg = "成绩上传成功！";	
+						msg += "成绩上传成功！\r\n";	
 					}
 				}				
 			}else{
@@ -185,7 +209,85 @@ public class UploadAction extends ActionSupport{
 		return null;
 	}	
 	
+	/**
+	 * 上传人员名单
+	 * @return
+	 * @throws IOException 
+	 * @throws FileNotFoundException 
+	 */
+	public String uploadPersonFile() throws FileNotFoundException, IOException {
 	
+		String msg = "";
+		try{
+		
+		String[][] personList = getData(file.get(0),1);
+		
+		int rowNum = personList.length;
+		if(rowNum>0){
+			for(int i=0;i<rowNum;++i){	
+				User user = new User();
+				user.setId(personList[i][0]);
+				user.setUserName(personList[i][1]);
+				user.setPassword(personList[i][2]);
+				user.setPosition(personList[i][3]);
+				
+				int index = personList[i][0].lastIndexOf(".00");
+				if(index>-1){	
+					user.setId(personList[i][0].substring(0,index));
+				}else{
+					user.setId(personList[i][0]);
+				}
+				
+				int index1 = personList[i][1].lastIndexOf(".00");
+				if(index>-1){	
+					user.setUserName(personList[i][1].substring(0,index1));
+				}else{
+					user.setUserName(personList[i][1]);
+				}
+				
+				int index2 = personList[i][2].lastIndexOf(".00");
+				if(index>-1){	
+					user.setPassword(personList[i][2].substring(0,index2));
+				}else{
+					user.setPassword(personList[i][2]);
+				}
+				
+				int index3 = personList[i][3].lastIndexOf(".00");
+				if(index>-1){	
+					user.setPosition(personList[i][3].substring(0,index3));
+				}else{
+					user.setPosition(personList[i][3]);
+				}
+				
+				user.setUserId(user.getId());
+				
+				
+				if(userService.findUser(user.getUserId()) != null)
+				{
+					msg = "上传失败，表格中存在已有的学生号";		
+					break;
+				}
+				else if("".equals(user.getId()))
+				{
+					msg = "上传失败，表格中学生学号不能为";		
+					break;
+				}
+				else{
+					userService.addUser(user);
+					msg = "上传成功";
+				}
+			}
+		}else{
+			msg = "无效文件,请重新上传";
+		}
+		}catch(Exception ex){
+			msg = "文件上传失败，请重新选择文件";	
+			System.out.println("文件上传失败!");
+			ex.printStackTrace();
+		}
+		ServletActionContext.getResponse().getWriter().write(msg);
+		return null;
+	}
 	
 	
 	/**
@@ -438,6 +540,14 @@ public class UploadAction extends ActionSupport{
 
 	public void setFileContentType(List<String> fileContentType) {
 		this.fileContentType = fileContentType;
+	}
+	
+	public IUserService getUserService() {
+		return userService;
+	}
+	
+	public void setUserService(IUserService userService) {
+		this.userService = userService;
 	}
 
 /*	public String execute() throws Exception {
